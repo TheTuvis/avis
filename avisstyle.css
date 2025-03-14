@@ -70,9 +70,45 @@ nav {
 
 }
 
-#knapp1{
+#knapp1 {
     background-color: aqua;
     font-size: 40px;
     cursor: pointer;
     border: none;
+}
+
+
+
+
+.maine {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    height: 100vh;
+}
+
+
+.over{
+
+    
+    height: 500px;
+    width: 100%;
+
+
+}
+
+.viktig{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.bokser{
+
+
+    
 }
