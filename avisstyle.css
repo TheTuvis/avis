@@ -130,22 +130,48 @@ nav {
 }
 
 #overboks1{
-    background-color: black;
+   background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto; 
     color: aliceblue;
 
 }
 #overboks2{
-    background-color: aquamarine;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
 
 }
 #overboks3{
-    background-color: blueviolet;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: auto;
 
 }
 #overboks4{
-    background-color: khaki;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
 
 }
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+
 
 .invisible_text p {
     position: absolute;
