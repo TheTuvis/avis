@@ -25,6 +25,17 @@ nav {
 
 }
 
+.bikkje{
+    
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    
+    padding: 10px 0; 
+    z-index: 1000; 
+}
+
 
 .bikkje a {
     text-decoration: none;
@@ -99,6 +110,7 @@ nav {
 }
 
 .viktig{
+    margin-top: 60px;
     height: 75px;
     width: 100%;
     display: flex;
@@ -118,22 +130,48 @@ nav {
 }
 
 #overboks1{
-    background-color: black;
+   background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto; 
     color: aliceblue;
 
 }
 #overboks2{
-    background-color: aquamarine;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
 
 }
 #overboks3{
-    background-color: blueviolet;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: auto;
 
 }
 #overboks4{
-    background-color: khaki;
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
+   background-position: center center;
+   background-repeat: no-repeat; 
+   background-size: auto;
 
 }
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+
+
 
 .invisible_text p {
     position: absolute;
@@ -175,6 +213,17 @@ nav {
 }
 
 
+.hoved div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+
+
 .liten{
     grid-column: span 3;
     grid-row: span 1;
@@ -195,6 +244,78 @@ nav {
     grid-row: span 1;
     border: 3px solid black;
 
+}
+
+
+
+
+
+
+
+
+
+/*fotter*/
+:root {
+    --primary: #222;
+    --KARPEprimary: #ff6f61;
+}
+ 
+#footerid {
+    background-color: var(--primary);
+}
+ 
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.footer {
+    padding: 10px 0;
+}
+ 
+.footer-liste {
+    width: 25%;
+}
+
+footer-liste h3 {
+    font-size: 1.2rem;
+    color: grey;
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+ 
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+ 
+.footer-liste ul li {
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+ 
+.footer-linker ul li:hover {
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+ 
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+.footer-linker ul li a:hover {
+    color: var(--KARPEprimary);
 }
 
 
