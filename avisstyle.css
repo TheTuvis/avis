@@ -92,7 +92,7 @@ nav {
 .over{
 
     
-    height: 500px;
+    height: 600px;
     width: 100%;
 
 
@@ -108,7 +108,97 @@ nav {
 }
 
 .bokser{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 525px;
+    width: 100%;
 
+
+}
+
+#overboks1{
+    background-color: black;
+    color: aliceblue;
+
+}
+#overboks2{
+    background-color: aquamarine;
+
+}
+#overboks3{
+    background-color: blueviolet;
+
+}
+#overboks4{
+    background-color: khaki;
+
+}
+
+.invisible_text p {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background-color: rgba(50, 50, 200, 0.5);
+    display: none;
+    padding: 25px;
+}
+
+.invisible_text {
+    position: relative;
+}
+
+.invisible_text:hover p {
+    display: block;
+}
+
+
+
+
+.hoved{
 
     
+
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+   
+
+
+
+
 }
+
+
+.liten{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.midi{
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.stor{
+    grid-column: span 9;
+    grid-row: span 1;
+}
+
+.hele{
+    grid-column: span 12;
+    grid-row: span 1;
+    border: 3px solid black;
+
+}
+
+
+
+
+
+
