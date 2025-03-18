@@ -322,6 +322,8 @@ a {
 .footer-linker ul li a:hover {
     color: var(--KARPEprimary);
 }
+
+
 /* avis layout */
 .containerArtikkel {
     max-width: 800px;
@@ -329,9 +331,8 @@ a {
 }
 
 .containerOverskrift {
-    max-width: 1040px;
+    max-width: 1150px;
     margin: auto;
-    /*border: 2px solid black;*/
 }
 
 .overskriftArtikkel {
@@ -357,7 +358,6 @@ img {
 }
 
 .publisertav {
-    /*border: 2px solid black;*/
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
