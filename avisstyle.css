@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-img{
+img {
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: auto;
 }
 
@@ -31,15 +31,15 @@ nav {
 
 }
 
-.bikkje{
-    
-    position: fixed; 
-    top: 0; 
+.bikkje {
+
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%; 
-    
-    padding: 10px 0; 
-    z-index: 1000; 
+    width: 100%;
+
+    padding: 10px 0;
+    z-index: 1000;
 }
 
 
@@ -97,16 +97,16 @@ nav {
 
 
 
-.over{
+.over {
 
-    
+
     height: 600px;
     width: 100%;
 
 
 }
 
-.viktig{
+.viktig {
     margin-top: 60px;
     height: 75px;
     width: 100%;
@@ -116,7 +116,7 @@ nav {
     background-color: aqua;
 }
 
-.bokser{
+.bokser {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -126,33 +126,36 @@ nav {
 
 }
 
-#overboks1{
-   background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
-   background-position: center center;
-   background-repeat: no-repeat; 
-   background-size: auto; 
+#overboks1 {
+    background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
     color: aliceblue;
 
 }
-#overboks2{
-    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
-   background-position: center center;
-   background-repeat: no-repeat; 
-   background-size: auto;
 
-}
-#overboks3{
-    background-image: url("https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg");
+#overboks2 {
+    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: auto;
 
 }
-#overboks4{
+
+#overboks3 {
+    background-image: url("https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+#overboks4 {
     background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
-   background-position: center center;
-   background-repeat: no-repeat; 
-   background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
 
 }
 
@@ -190,75 +193,21 @@ nav {
 }
 
 
-
-
-.hoved{
-
-    
-
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-    grid-template-columns: repeat(12, 1fr);
-    height: 800px;
-    width: 80%;
-    margin-left: 10%;
-    
-   
+/*grid system*/
 
 
 
 
-}
-
-
-.hoved div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-}
 
 
 
 
-.liten{
-    grid-column: span 3;
-    grid-row: span 1;
-}
-
-.midi{
-    grid-column: span 6;
-    grid-row: span 1;
-}
-
-.stor{
-    grid-column: span 9;
-    grid-row: span 1;
-}
-
-.hele{
-    grid-column: span 12;
-    grid-row: span 1;
-    border: 3px solid black;
 
 
 
-}
 
 
-#art1 img{
-    width: 100%;
-    height: 60%;
-   
-    
 
-}
-
-#art1{
-  display: flex;
-  flex-direction: column;
-}
 
 
 
@@ -271,21 +220,20 @@ nav {
     --primary: #222;
     --KARPEprimary: #ff6f61;
 }
- 
+
 #footerid {
     background-color: var(--primary);
 }
- 
-.main
-{
+
+.main {
     display: flex;
     flex-wrap: wrap;
 }
- 
+
 .footer {
     padding: 30px 40px;
 }
- 
+
 .footer-liste {
     width: 25%;
 }
@@ -297,7 +245,7 @@ nav {
     margin-bottom: 25px;
     font-family: Arial, sans-serif;
 }
- 
+
 .footer-liste h3::before {
     content: "";
     position: absolute;
@@ -307,31 +255,25 @@ nav {
     bottom: -8px;
     background: var(--KARPEprimary);
 }
- 
+
 .footer-liste ul li {
     color: grey;
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     margin-top: 10px;
 }
- 
+
 .footer-linker ul li:hover {
     color: var(--KARPEprimary);
     transform: scale(1.05) translateY(2px);
     transition: .4s;
 }
- 
+
 .footer-linker ul li a {
     color: white;
     text-decoration: none;
 }
- 
+
 .footer-linker ul li a:hover {
     color: var(--KARPEprimary);
 }
-
-
-
-
-
-
