@@ -329,7 +329,7 @@ a {
 }
 
 .containerOverskrift {
-
+    max-width: 1040px;
     margin: auto;
     /*border: 2px solid black;*/
 }
