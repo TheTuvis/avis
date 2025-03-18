@@ -98,6 +98,10 @@ nav {
 
 
 .over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 
     height: 600px;
@@ -109,7 +113,7 @@ nav {
 .viktig {
     margin-top: 60px;
     height: 75px;
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,9 +123,9 @@ nav {
 .bokser {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     height: 525px;
-    width: 100%;
+    width: 80%;
 
 
 }
@@ -151,13 +155,7 @@ nav {
 
 }
 
-#overboks4 {
-    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
 
-}
 
 .full-link {
     position: absolute;
