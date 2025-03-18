@@ -98,6 +98,10 @@ nav {
 
 
 .over {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 
     height: 600px;
@@ -109,7 +113,7 @@ nav {
 .viktig {
     margin-top: 60px;
     height: 75px;
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,9 +123,9 @@ nav {
 .bokser {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     height: 525px;
-    width: 100%;
+    width: 80%;
 
 
 }
@@ -151,13 +155,7 @@ nav {
 
 }
 
-#overboks4 {
-    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
 
-}
 
 .full-link {
     position: absolute;
@@ -323,4 +321,65 @@ a {
 
 .footer-linker ul li a:hover {
     color: var(--KARPEprimary);
+}
+/* avis layout */
+.containerArtikkel {
+    max-width: 800px;
+    margin: auto;
+}
+
+.containerOverskrift {
+    max-width: 1040px;
+    margin: auto;
+    /*border: 2px solid black;*/
+}
+
+.overskriftArtikkel {
+    font-size: 60px;
+    margin: 20px;
+    text-align: center;
+}
+
+.innledning {
+    font-size: 32px;
+    margin: 20px;
+}
+
+.hovedtekst>p {
+    font-size: 23px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.publisertav {
+    /*border: 2px solid black;*/
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.skrevetav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-circle-user {
+    color: black;
+    padding-right: 10px;
+}
+
+.boldTekst {
+    font-weight: 700;
+}
+
+.hovedtekst>.underoverskrift {
+    font-size: 30px;
+    margin-top: 50px;
 }
