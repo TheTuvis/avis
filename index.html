@@ -34,6 +34,17 @@
         <a href="#news">News
             <i class="fa-solid fa-landmark"></i>
         </a>
+
+
+
+        <div class="input-container" id="inputContainer">
+            <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+            <button onclick="søk()">Søk</button>
+            <div class="søk-content" id="søkContent"></div>
+          </div>
+
+
+
         <div class="dropdown">
             <button class="dropbtn" id="knapp1">Dropdown
                 <i class="fa fa-caret-down"></i>
@@ -209,11 +220,77 @@
         let dropp = document.querySelector(".dropdown .dropdown-content")
         let knapp = document.querySelector(".dropbtn")
 
+        let innhold = document.querySelector(".input-container .søk-content")
+
         knapp.addEventListener("click", funk)
 
         function funk() {
             dropp.classList.toggle("blippern")
         }
+
+
+        function søk() {
+      const søkeord = document.getElementById("søkeord").value.toLowerCase();
+      const søkContent = document.getElementById("søkContent");
+      søkContent.innerHTML = "";
+      søkContent.style.display = "block";
+
+      const links = {
+        biler: "biler.html",
+        hus: "hus.html",
+        mobil: "mobil.html",
+        data: "data.html",
+        klær: "klær.html",
+        musikk: "musikk.html",
+        filmer: "filmer.html",
+        reiser: "reiser.html",
+        spill: "spill.html",
+      };
+
+
+      if (søkeord === "biler") {
+        resultat = "meta mot ai"
+        
+      } else if (søkeord === "hus") {
+        resultat = "Du søkte etter hus. Sjekk ut våre eiendommer!";
+       
+      } else if (søkeord === "mobil") {
+        resultat = "Du søkte etter mobiltelefoner. Se de nyeste modellene!";
+        
+      } else if (søkeord === "data") {
+        resultat = "Du søkte etter datautstyr. Se våre datamaskiner!";
+
+      } else if (søkeord === "klær") {
+        resultat = "Du søkte etter klær. Her er siste mote!";
+     
+      } else if (søkeord === "bøker") {
+        resultat = "Du søkte etter bøker. Finn din neste favorittbok!";
+       
+      } else if (søkeord === "musikk") {
+        resultat = "Du søkte etter musikk. Hør på de nyeste låtene!";
+        
+      } else if (søkeord === "filmer") {
+        resultat = "Du søkte etter filmer. Se hva som er populært nå!";
+       
+      } else if (søkeord === "reiser") {
+        resultat = "Du søkte etter reiser. Bestill din neste ferie!";
+       
+      } else if (søkeord === "spill") {
+        resultat = "Du søkte etter spill. Se de beste spillene her!";
+       
+      } else {
+        resultat = "Beklager, vi fant ingen resultater for: " + søkeord;
+      }
+
+
+      if (links[søkeord]) {
+        søkContent.innerHTML = `<a href="${links[søkeord]}">${resultat}</a>`;
+      } else {
+        søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+      }
+    }
+
+
 
 
 
