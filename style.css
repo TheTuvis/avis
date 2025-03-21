@@ -234,7 +234,7 @@ article.xlarge {
 }
 
 .artikkeltittel {
-    font-size: 40px;
+    font-size: 35px;
     padding: 10px;
     color: black;
 }
@@ -337,7 +337,6 @@ a {
 .overskriftArtikkel {
     font-size: 60px;
     margin: 20px;
-    text-align: center;
 }
 
 .innledning {
