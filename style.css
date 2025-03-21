@@ -18,20 +18,14 @@ img {
 nav {
     display: flex;
     flex-direction: row;
-
-    width: 100vw;
-
-    height: 70px;
-    background-color: aqua;
-
     justify-content: space-around;
-
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(72, 74, 193);
     align-items: center;
-
-
 }
 
-.bikkje {
+.navbar {
 
     position: fixed;
     top: 0;
@@ -43,7 +37,7 @@ nav {
 }
 
 
-.bikkje a {
+.navbar a {
     text-decoration: none;
     font-size: 40px;
     color: black;
@@ -54,7 +48,7 @@ nav {
     display: block;
     text-decoration: none;
     font-size: 25px;
-    background-color: aquamarine;
+    background-color: rgb(72, 74, 193);
     padding: 5px;
 }
 
@@ -378,7 +372,6 @@ a {
 
 img {
     width: 100%;
-    margin-top: 30px;
 }
 
 .publisertav {
@@ -440,6 +433,7 @@ ul li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .visMer {
     background-color: rgb(240, 240, 246);
     border: 2px solid rgb(23, 59, 157);
