@@ -381,3 +381,15 @@ img {
     font-size: 30px;
     margin-top: 50px;
 }
+
+
+/*Boks med kort oppsummering*/
+
+.oppsummering {
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+
+
+}
