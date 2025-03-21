@@ -208,7 +208,7 @@ nav {
 article {
     background-color: rgb(241, 235, 235);
     grid-column: span 3;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 .small {
@@ -234,7 +234,7 @@ article.xlarge {
 }
 
 .artikkeltittel {
-    font-size: 40px;
+    font-size: 35px;
     padding: 10px;
     color: black;
 }
@@ -363,7 +363,6 @@ a {
 .overskriftArtikkel {
     font-size: 60px;
     margin: 20px;
-    text-align: center;
 }
 
 .innledning {
@@ -407,4 +406,49 @@ img {
 .hovedtekst>.underoverskrift {
     font-size: 30px;
     margin-top: 50px;
+}
+
+
+/*Boks med kort oppsummering*/
+
+.oppsummering {
+    border: 2px solid rgb(23, 59, 157);
+    border-radius: 8px;
+    background-color: rgb(219, 219, 247);
+    width: 80%;
+    height: 160px;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+}
+
+ul {
+    list-style-type: circle;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.punkterOverskrift {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.visMer {
+    background-color: rgb(240, 240, 246);
+    border: 2px solid rgb(23, 59, 157);
+    border-radius: 30px;
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: block;
+
 }
