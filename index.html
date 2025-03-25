@@ -28,6 +28,9 @@
 
 
     <nav class="navbar">
+
+
+        <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png" alt="" class="logo">
         <a href="#home">Home
             <i class="fa-solid fa-house"></i>
         </a>
@@ -232,22 +235,27 @@
 
 
         function søk() {
-      const søkeord = document.getElementById("søkeord").value.toLowerCase();
-      const søkContent = document.getElementById("søkContent");
-      søkContent.innerHTML = "";
-      søkContent.style.display = "block";
+  const søkeord = document.getElementById("søkeord").value.toLowerCase();
+  const søkContent = document.getElementById("søkContent");
+  søkContent.innerHTML = "";
+  søkContent.style.display = "block";
 
-      const links = {
-        biler: [ "meta mot ai",  "biler.html"],
-      };
+  const links = {
+    biler: ["Meta mot AI", "biler.html"],
+  };
 
+ 
+  if (links[søkeord]) {
+    søkContent.innerHTML = `<a href="${links[søkeord][1]}" onclick="window.location.href='${links[søkeord][1]}'">${links[søkeord][0]}</a>`;
+  } else {
+    søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+  }
 
-      if (links[søkeord]) {
-        søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
-      } else {
-        søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
-      }
-    }
+ 
+  setTimeout(function() {
+    søkContent.style.display = "none";
+  }, 5000);
+}
 
 
 
