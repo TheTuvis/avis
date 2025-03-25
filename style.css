@@ -18,10 +18,10 @@ img {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
-    height: 70px;
-    background-color: rgb(72, 74, 193);
+    height: 80px;
+    background-color: rgb(59, 173, 219);
     align-items: center;
 }
 
@@ -40,20 +40,85 @@ nav {
 .navbar a {
     text-decoration: none;
     font-size: 40px;
-    color: black;
+    color: white;
 
+}
+
+.navdel1>* {
+    padding: 30px;
+}
+
+.navdel3>* {
+    padding: 7px;
+}
+
+
+
+.navdel1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.navdel2 {
+    align-items: center;
+}
+
+.navdel3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logginn,
+.abonner {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: white;
+}
+
+.abonner {
+    background-color: white;
+    color: rgb(59, 173, 219);
+}
+
+.fa-bars {
+    color: white;
+}
+
+.input-container {
+    
+}
+
+#søkeord {
+    height: 33px;
+}
+#søkknapp {
+    height: 33px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid grey;
 }
 
 .dropdown-content a {
     display: block;
     text-decoration: none;
     font-size: 25px;
-    background-color: rgb(72, 74, 193);
+    background-color: rgb(59, 173, 219);
     padding: 5px;
 }
 
 .dropdown {
     position: relative;
+    padding: 30px;
 }
 
 
@@ -76,13 +141,13 @@ nav {
 .blippern {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: rgb(59, 173, 219);
     font-size: 25px;
 
 }
 
-#knapp1 {
-    background-color: aqua;
+.dropbtn {
+    background-color: rgb(59, 173, 219);
     font-size: 40px;
     cursor: pointer;
     border: none;
@@ -104,52 +169,51 @@ nav {
 
 }
 
-.viktig {
-    margin-top: 60px;
-    height: 75px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
+.boksen{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-top: 70px;
+
 }
+
+
+
+
+
 
 .bokser {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 525px;
-    width: 80%;
-
-
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 1000px;
 }
 
-#overboks1 {
-    background-image: url("https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg");
-    background-position: center center;
+.bokser div {
+    position: relative;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bokser div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#overboks1 { background-image: url('https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg'); }
+#overboks2 { background-image: url('https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg'); }
+#overboks3 { background-image: url('https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg'); }
+
+.bokser div {
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
-    color: aliceblue;
-
+    background-size: cover;
 }
-
-#overboks2 {
-    background-image: url("https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
-
-}
-
-#overboks3 {
-    background-image: url("https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto;
-
-}
-
-
 
 .full-link {
     position: absolute;
@@ -158,31 +222,34 @@ nav {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    color: inherit;
-    display: block;
 }
-
-
-
 
 .invisible_text p {
     position: absolute;
-    top: 30%;
+    bottom: 0;
     left: 0;
-    height: 70%;
     width: 100%;
-    background-color: rgba(50, 50, 200, 0.5);
-    display: none;
-    padding: 25px;
-}
-
-.invisible_text {
-    position: relative;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .invisible_text:hover p {
-    display: block;
+    opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .bokser {
+        grid-template-columns: 1fr;
+    }
+    .bokser div {
+        height: 300px;
+    }
+} 
 
 
 /*grid system*/
@@ -194,7 +261,6 @@ nav {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 400px 400px 400px 400px 300px;
     gap: 25px;
-    margin: auto;
     margin-top: 40px;
 }
 
