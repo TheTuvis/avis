@@ -237,55 +237,12 @@
       søkContent.style.display = "block";
 
       const links = {
-        biler: "biler.html",
-        hus: "hus.html",
-        mobil: "mobil.html",
-        data: "data.html",
-        klær: "klær.html",
-        musikk: "musikk.html",
-        filmer: "filmer.html",
-        reiser: "reiser.html",
-        spill: "spill.html",
+        biler: [ "meta mot ai",  "biler.html"],
       };
 
 
-      if (søkeord === "biler") {
-        resultat = "meta mot ai"
-        
-      } else if (søkeord === "hus") {
-        resultat = "Du søkte etter hus. Sjekk ut våre eiendommer!";
-       
-      } else if (søkeord === "mobil") {
-        resultat = "Du søkte etter mobiltelefoner. Se de nyeste modellene!";
-        
-      } else if (søkeord === "data") {
-        resultat = "Du søkte etter datautstyr. Se våre datamaskiner!";
-
-      } else if (søkeord === "klær") {
-        resultat = "Du søkte etter klær. Her er siste mote!";
-     
-      } else if (søkeord === "bøker") {
-        resultat = "Du søkte etter bøker. Finn din neste favorittbok!";
-       
-      } else if (søkeord === "musikk") {
-        resultat = "Du søkte etter musikk. Hør på de nyeste låtene!";
-        
-      } else if (søkeord === "filmer") {
-        resultat = "Du søkte etter filmer. Se hva som er populært nå!";
-       
-      } else if (søkeord === "reiser") {
-        resultat = "Du søkte etter reiser. Bestill din neste ferie!";
-       
-      } else if (søkeord === "spill") {
-        resultat = "Du søkte etter spill. Se de beste spillene her!";
-       
-      } else {
-        resultat = "Beklager, vi fant ingen resultater for: " + søkeord;
-      }
-
-
       if (links[søkeord]) {
-        søkContent.innerHTML = `<a href="${links[søkeord]}">${resultat}</a>`;
+        søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
       } else {
         søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
       }
