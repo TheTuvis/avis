@@ -48,22 +48,32 @@
             </a>
 
             <div class="dropdown">
-                <button class="dropbtn">
+                <button class="dropbtn" onclick="klikk()">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
             </div>
+        </div>
+
+        <div class="dropdown-content2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
     </nav>
 
 
     <script>
 
-        let dropp = document.querySelector(".dropdown .dropdown-content")
+        function klikk() {
+            const dropdownElm = document.querySelector(".dropdown-content2")
+            if (dropdownElm.style.display == "flex") {
+                dropdownElm.style.display = "none"
+            } else {
+                dropdownElm.style.display = "flex"
+            }
+        }
+
+        /*let dropp = document.querySelector(".dropdown-content2")
         let knapp = document.querySelector(".dropbtn")
 
         let innhold = document.querySelector(".input-container .søk-content")
@@ -72,7 +82,7 @@
 
         function funk() {
             dropp.classList.toggle("blippern")
-        }
+        }*/
 
 
         function søk() {
