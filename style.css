@@ -33,10 +33,10 @@ img {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
-    height: 70px;
-    background-color: rgb(72, 74, 193);
+    height: 80px;
+    background-color: rgb(59, 173, 219);
     align-items: center;
 }
 
@@ -55,49 +55,104 @@ nav {
 .navbar a {
     text-decoration: none;
     font-size: 40px;
-    color: black;
+    color: white;
 
 }
 
-.dropdown-content a {
-    display: block;
-    text-decoration: none;
-    font-size: 25px;
-    background-color: rgb(72, 74, 193);
-    padding: 5px;
+.navdel1>* {
+    padding: 30px;
 }
 
-.dropdown {
-    position: relative;
+.navdel3>* {
+    padding: 7px;
+}
+
+.navdel1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.navdel2 {
+    align-items: center;
+}
+
+.navdel3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 
-.dropdown-content {
-    position: absolute;
-    top: 58px;
-    left: 0;
-    background-color: aquamarine;
+.logginn,
+.abonner {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: white;
+}
+
+.abonner {
+    background-color: white;
+    color: rgb(59, 173, 219);
+}
+
+.fa-bars {
+    color: white;
+}
+
+#søkeord {
+    height: 33px;
+}
+
+#søkknapp {
+    height: 33px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+.dropdown-content2 {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
     z-index: 1000;
-    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 250px;
     text-align: center;
-
+    background-color: rgb(59, 173, 219);;
 }
+
+.dropdown-content2 a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
 
 
 .blippern {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: rgb(59, 173, 219);
     font-size: 25px;
 
 }
 
-#knapp1 {
-    background-color: aqua;
+.dropbtn {
+    background-color: rgb(59, 173, 219);
     font-size: 40px;
     cursor: pointer;
     border: none;
@@ -119,7 +174,7 @@ nav {
 
 }
 
-.boksen{
+.boksen {
     display: grid;
     grid-template-columns: 70% 30%;
     margin-top: 70px;
@@ -155,9 +210,17 @@ nav {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-#overboks1 { background-image: url('https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg'); }
-#overboks2 { background-image: url('https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg'); }
-#overboks3 { background-image: url('https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg'); }
+#overboks1 {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/c4HszRdoBKDepwtFVFhrwV-1200-80.jpg');
+}
+
+#overboks2 {
+    background-image: url('https://www.pingvinavisa.no/wp-content/uploads/2017/07/ambulanse_070514_web-1024x684.jpg');
+}
+
+#overboks3 {
+    background-image: url('https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg');
+}
 
 .bokser div {
     background-position: center;
@@ -196,10 +259,11 @@ nav {
     .bokser {
         grid-template-columns: 1fr;
     }
+
     .bokser div {
         height: 300px;
     }
-} 
+}
 
 
 /*grid system*/
