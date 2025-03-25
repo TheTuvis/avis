@@ -28,15 +28,12 @@
 
 
     <nav class="navbar">
-
-        <div class="navdel1">
-            <a href="index.html"> Logo</a>
-            <a href="index.html">Nyheter
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a href="tips.html">Tips oss
-                <i class="fa-solid fa-pen-to-square"></i>
-            </a>
+        <a href="#home">Home
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#news">News
+            <i class="fa-solid fa-landmark"></i>
+        </a>
 
 
         </div>
@@ -239,22 +236,27 @@
     <script>
 
         function søk() {
-      const søkeord = document.getElementById("søkeord").value.toLowerCase();
-      const søkContent = document.getElementById("søkContent");
-      søkContent.innerHTML = "";
-      søkContent.style.display = "block";
+  const søkeord = document.getElementById("søkeord").value.toLowerCase();
+  const søkContent = document.getElementById("søkContent");
+  søkContent.innerHTML = "";
+  søkContent.style.display = "block";
 
-      const links = {
-        biler: [ "meta mot ai",  "biler.html"],
-      };
+  const links = {
+    biler: ["Meta mot AI", "biler.html"],
+  };
 
+ 
+  if (links[søkeord]) {
+    søkContent.innerHTML = `<a href="${links[søkeord][1]}" onclick="window.location.href='${links[søkeord][1]}'">${links[søkeord][0]}</a>`;
+  } else {
+    søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+  }
 
-      if (links[søkeord]) {
-        søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
-      } else {
-        søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
-      }
-    }
+ 
+  setTimeout(function() {
+    søkContent.style.display = "none";
+  }, 5000);
+}
 
 
 
