@@ -6,7 +6,7 @@ function storBoks() {
     if (x % 2 == 0) {
         punkterEl.style.display = "flex"
         boksOppsummert.style.height = "fit-content"
-        knappEl.innerHTML = "Vis Mindre"
+        knappEl.innerHTML = "Vis mindre"
         x++
     }
     else {
