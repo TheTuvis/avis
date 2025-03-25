@@ -18,10 +18,10 @@ img {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
-    height: 70px;
-    background-color: rgb(72, 74, 193);
+    height: 80px;
+    background-color: rgb(59, 173, 219);
     align-items: center;
 }
 
@@ -40,20 +40,85 @@ nav {
 .navbar a {
     text-decoration: none;
     font-size: 40px;
-    color: black;
+    color: white;
 
+}
+
+.navdel1>* {
+    padding: 30px;
+}
+
+.navdel3>* {
+    padding: 7px;
+}
+
+
+
+.navdel1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.navdel2 {
+    align-items: center;
+}
+
+.navdel3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logginn,
+.abonner {
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: white;
+}
+
+.abonner {
+    background-color: white;
+    color: rgb(59, 173, 219);
+}
+
+.fa-bars {
+    color: white;
+}
+
+.input-container {
+    
+}
+
+#søkeord {
+    height: 33px;
+}
+#søkknapp {
+    height: 33px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid grey;
 }
 
 .dropdown-content a {
     display: block;
     text-decoration: none;
     font-size: 25px;
-    background-color: rgb(72, 74, 193);
+    background-color: rgb(59, 173, 219);
     padding: 5px;
 }
 
 .dropdown {
     position: relative;
+    padding: 30px;
 }
 
 
@@ -76,13 +141,13 @@ nav {
 .blippern {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: rgb(59, 173, 219);
     font-size: 25px;
 
 }
 
-#knapp1 {
-    background-color: aqua;
+.dropbtn {
+    background-color: rgb(59, 173, 219);
     font-size: 40px;
     cursor: pointer;
     border: none;
