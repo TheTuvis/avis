@@ -105,6 +105,8 @@ nav {
 
 .fa-bars {
     color: white;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
 #søkeord {
@@ -127,7 +129,7 @@ nav {
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 250px;
+    width: 350px;
     text-align: center;
     background-color: rgb(59, 173, 219);;
 }
@@ -158,6 +160,46 @@ nav {
     border: none;
 }
 
+
+.logginnContainer {
+    margin: auto;
+    margin-top: 30vh;
+    height: 400px;
+    width: 400px;
+    border: 13px solid rgb(59, 173, 219);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logginnboks {
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+
+.logginntopp {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logginnContainer button {
+    height: 40px;
+    min-width: 120px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(59, 173, 219);
+    padding: 10px;
+}
 
 
 

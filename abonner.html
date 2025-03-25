@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Abonner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav class="navbar">
 
@@ -69,49 +67,20 @@
     </nav>
 
 
-    <script>
 
-        const menyEl = document.querySelector(".dropbtn")
-
-        function klikk() {
-            const dropdownElm = document.querySelector(".dropdown-content2")
-            if (dropdownElm.style.display == "flex") {
-                dropdownElm.style.display = "none"
-            } else {
-                dropdownElm.style.display = "flex"
-            }
-        }
-
-        /*let dropp = document.querySelector(".dropdown-content2")
-        let knapp = document.querySelector(".dropbtn")
-
-        let innhold = document.querySelector(".input-container .søk-content")
-
-        knapp.addEventListener("click", funk)
-
-        function funk() {
-            dropp.classList.toggle("blippern")
-        }*/
+    <div class="logginnContainer">
+        <div class="logginntopp"> 
+            <p>Logo</p>
+            <button>Har du allerede en bruker?</button>
+        </div>
+        <h1 class="logginnO">Opprett bruker</h1>
+        <input class="logginnboks" type="text" placeholder="Brukernavn" />
+        <input class="logginnboks" type="text" placeholder="Passord" />
+        <button id="logginnbtn">Opprett bruker</button>
+    </div>
 
 
-        function søk() {
-            const søkeord = document.getElementById("søkeord").value.toLowerCase();
-            const søkContent = document.getElementById("søkContent");
-            søkContent.innerHTML = "";
-            søkContent.style.display = "block";
 
-            const links = {
-                biler: ["meta mot ai", "biler.html"],
-            };
-
-
-            if (links[søkeord]) {
-                søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
-            } else {
-                søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
