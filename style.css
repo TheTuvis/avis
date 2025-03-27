@@ -224,6 +224,7 @@ nav {
 }
 
 .logginnContainer {
+    background-color: var(--hvit);
     margin: auto;
     margin-top: 30vh;
     height: 400px;
@@ -240,6 +241,10 @@ nav {
     display: block;
     height: 50px;
     width: 200px;
+}
+
+.logginnboks2 {
+    height: 180px;
 }
 
 .logginntopp {
