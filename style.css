@@ -26,6 +26,24 @@ img {
     background-size: auto;
 }
 
+/* Mørkmodus */
+
+
+.toggleSvart {
+    background-color: black;
+}
+.toggleBlå {
+    background-color: rgb(12, 62, 141);
+}
+
+.toggleArticle {
+    background-color: rgb(50, 49, 54);
+}
+
+.toggleOverskrift {
+    color: white;
+}
+
 
 
 /*topppiss*/
@@ -147,8 +165,8 @@ nav {
     overflow: hidden;
     width: 350px;
     text-align: center;
-    background-color: var(--blå);
-    border: 2px solid var(--hvit);
+    background-color: inherit;
+    border: 0px solid var(--hvit);
 }
 
 .dropdown-content2  a {
@@ -163,7 +181,7 @@ nav {
 
 
 .dropbtn {
-    background-color: var(--blå);
+    background-color: inherit;
     font-size: 40px;
     border: none;
 }
@@ -171,7 +189,7 @@ nav {
 .drop1, .drop11{
     color: var(--hvit);
     height: fit fit-content;
-    background-color: var(--blå);
+    background-color: inherit;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -201,7 +219,7 @@ nav {
     margin-left: 20px;
 }
 .knappikon {
-    background-color: var(--blå);
+    background-color: inherit;
     border: none;
 }
 

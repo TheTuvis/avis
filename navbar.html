@@ -9,8 +9,8 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-</head>
 
+</head>
 <body>
     <nav class="navbar">
 
@@ -113,6 +113,9 @@
 
         const toggleEl = document.querySelector(".knappikon")
         toggleEl.addEventListener("click", Mørkmodus)
+        const bodyEl = document.querySelector("body")
+        const navbarEl = document.querySelector(".navbar")
+        const articleEl = document.querySelector(".hei")
 
         function Mørkmodus() {
             let ikon1 = document.querySelector(".ikonmørkmodus")
@@ -123,7 +126,10 @@
                 ikon1.classList.remove("fa-toggle-on")
                 ikon1.classList.add("fa-toggle-off")
             }
+            bodyEl.classList.toggle("toggleSvart")
+            navbarEl.classList.toggle("toggleBlå")
         }
+
 
 
         function søk() {
