@@ -1,3 +1,19 @@
+:root {
+    --blå: rgb(31, 156, 205);
+    --svart: black;
+    --mørkblå: rgb(23, 59, 157);
+    --hvit: white;
+    --grå: grey;
+    --lysblå: lightblue;
+    --articlebakgrunnsfarge:rgb(241, 235, 235);
+    --hvitblå: rgb(219, 219, 247);
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +52,7 @@ nav {
     justify-content: space-between;
     width: 100vw;
     height: 80px;
-    background-color: rgb(59, 173, 219);
+    background-color: var(--blå);
     align-items: center;
 }
 
@@ -55,7 +71,7 @@ nav {
 .navbar a {
     text-decoration: none;
     font-size: 40px;
-    color: white;
+    color: var(--hvit);
 
 }
 
@@ -94,13 +110,13 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
 }
 
 .abonner {
-    background-color: white;
-    color: rgb(59, 173, 219);
+    background-color: var(--hvit);
+    color: var(--blå);
 }
 
 .fa-bars {
@@ -116,8 +132,8 @@ nav {
 #søkknapp {
     height: 33px;
     width: 50px;
-    background-color: white;
-    border: 1px solid grey;
+    background-color: var(--hvit);
+    border: 1px solid var(--grå);
 }
 
 .dropdown-content2 {
@@ -131,8 +147,8 @@ nav {
     overflow: hidden;
     width: 350px;
     text-align: center;
-    background-color: rgb(59, 173, 219);
-    border: 2px solid white;
+    background-color: var(--blå);
+    border: 2px solid var(--hvit);
 }
 
 .dropdown-content2  a {
@@ -142,20 +158,20 @@ nav {
 }
 
 .dropdown-content2 > div {
-    border: 1px solid white;
+    border: 1px solid var(--hvit);
 }
 
 
 .dropbtn {
-    background-color: rgb(59, 173, 219);
+    background-color: var(--blå);
     font-size: 40px;
     border: none;
 }
 
 .drop1, .drop11{
-    color: white;
+    color: var(--hvit);
     height: fit fit-content;
-    background-color: rgb(59, 173, 219);
+    background-color: var(--blå);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -172,7 +188,7 @@ nav {
 }
 
 .droplinje {
-    color: white;
+    color: var(--hvit);
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -185,7 +201,7 @@ nav {
     margin-left: 20px;
 }
 .knappikon {
-    background-color: rgb(59, 173, 219);
+    background-color: var(--blå);
     border: none;
 }
 
@@ -194,9 +210,9 @@ nav {
     margin-top: 30vh;
     height: 400px;
     width: 400px;
-    border: 13px solid rgb(59, 173, 219);
+    border: 13px solid var(--blå);
     border-radius: 30px;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 10px 10px 5px var(--lysblå);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -223,9 +239,9 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    border: 2px solid white;
-    color: white;
-    background-color: rgb(59, 173, 219);
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
+    background-color: var(--blå);
     padding: 10px;
 }
 
@@ -271,13 +287,13 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     border: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px var(--svart);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bokser div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px var(--svart);
 }
 
 #overboks1 {
@@ -314,8 +330,8 @@ nav {
     width: 100%;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    color: white;
+    background: linear-gradient(to top, black, transparent);
+    color: var(--hvit);
     font-size: 1.1rem;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -350,7 +366,7 @@ nav {
 
 
 article {
-    background-color: rgb(241, 235, 235);
+    background-color: var(--articlebakgrunnsfarge);
     grid-column: span 3;
     /*border: 2px solid black;*/
 }
@@ -555,9 +571,9 @@ img {
 /*Boks med kort oppsummering*/
 
 .oppsummering {
-    border: 2px solid rgb(23, 59, 157);
+    border: 2px solid var(--mørkblå);
     border-radius: 8px;
-    background-color: rgb(219, 219, 247);
+    background-color: var(--hvitblå);
     width: 80%;
     height: 160px;
     text-align: left;
@@ -585,8 +601,8 @@ ul li {
 }
 
 .visMer {
-    background-color: rgb(240, 240, 246);
-    border: 2px solid rgb(23, 59, 157);
+    background-color: var(--hvitblå);
+    border: 2px solid var(--mørkblå);
     border-radius: 30px;
     height: 50px;
     width: 120px;
