@@ -52,7 +52,7 @@
         <div class="navdel2">
             <div class="input-container">
                 <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
-                <button id="søkknapp" onclick="søk()">Søk</button>
+                <button id="søkknapp" onclick="sok()">Søk</button>
                 <div class="søk-content" id="søkContent"></div>
             </div>
 
@@ -247,7 +247,8 @@
 
     <script src="script.js">
 
-        function søk() {
+        function sok() {
+            console.log("Søkefunksjonen er aktiv");
             const søkeord = document.getElementById("søkeord").value.toLowerCase();
             const søkContent = document.getElementById("søkContent");
             søkContent.innerHTML = "";
