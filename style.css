@@ -254,10 +254,15 @@ nav {
 }
 
 .logginntopp {
-    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.miniLogo{
+    width: 70px;
 }
 
 .logginnContainer button {
@@ -650,3 +655,4 @@ ul li {
     border: 1px solid #ddd;
     padding: 10px;
 }
+
