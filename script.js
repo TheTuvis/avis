@@ -67,23 +67,46 @@ function Mørkmodus() {
 
 
 function sok() {
-    const søkeord = document.getElementById("søkeord").value.toLowerCase();
+    const søkeord = document.getElementById("søkeord").value.trim().toLowerCase(); // trim() for å fjerne ekstra mellomrom
     const søkContent = document.getElementById("søkContent");
     søkContent.innerHTML = "";
     søkContent.style.display = "block";
 
     const links = {
-        biler: ["meta mot ai", "biler.html"],
+        meta: ["meta mot ai", "meta-mot-AI.html"],
+        ai: ["meta mot ai", "meta-mot-AI.html"],
+        data: ["datadelig", "datadelingiNorge.html"],
+        datadelig: ["datadelig", "datadelingiNorge.html"],
+        personvern: ["datadelig", "datadelingiNorge.html"],
+        digitalisering: ["datadelig", "datadelingiNorge.html"],
+        kreft: ["lungekreft", "lungekreft.html"],
+        lunge: ["lungekreft", "lungekreft.html"],
+        lungekreft: ["lungekreft", "lungekreft.html"],
+        sykdom: ["lungekreft", "lungekreft.html"],
+        chatgpt: ["lungekreft", "chatgpt.html"],
+        nrk: ["lungekreft", "chatgpt.html"],
+        prpoganda: ["lungekreft", "chatgpt.html"],
+        russland: ["lungekreft", "chatgpt.html"],
+        chip: ["chip", "chip.html"],
+        microsoft: ["chip", "chip.html"],
+        kraft: ["kraftkrise", "kraftkrise.html"],
+        krise: ["kraftkrise", "kraftkrise.html"],
+        strøm: ["kraftkrise", "kraftkrise.html"],
+        power: ["kraftkrise", "kraftkrise.html"],
+        usa: ["droner mot sørgrensa", "droner-mot-sorgrensen.html"],
+        droner: ["droner mot sørgrensa", "droner-mot-sorgrensen.html"],
+        krig: ["droner mot sørgrensa", "droner-mot-sorgrensen.html"],
+        trump: ["droner mot sørgrensa", "droner-mot-sorgrensen.html"],
     };
 
-
+    // Hvis søkeordet finnes i links, vis resultatet
     if (links[søkeord]) {
         søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
     } else {
         søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
     }
 
-
+    // Skjul resultatene etter 5 sekunder
     setTimeout(function () {
         søkContent.style.display = "none";
     }, 5000);

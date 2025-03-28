@@ -454,15 +454,19 @@ a {
     z-index: 1000;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
-
+.søk-content a {
+    color: black;
+}
 
 .søkeord {
     display: flex;
     flex-direction: column;
     background-color: aquamarine;
     font-size: 25px;
+    color: black;
 
 }
 
