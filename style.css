@@ -5,7 +5,7 @@
     --hvit: white;
     --grå: grey;
     --lysblå: lightblue;
-    --articlebakgrunnsfarge:rgb(241, 235, 235);
+    --articlebakgrunnsfarge: rgb(241, 235, 235);
     --articlebakgrunnmørk: rgb(50, 49, 54);
     --hvitblå: rgb(219, 219, 247);
 }
@@ -33,6 +33,7 @@ img {
 .toggleSvart {
     background-color: var(--svart);
 }
+
 .toggleBlå {
     background-color: var(--mørkblå);
 }
@@ -52,7 +53,7 @@ img {
 
 
 
-.logo{
+.logo {
     height: 100px;
     width: 100px;
 
@@ -76,7 +77,7 @@ nav {
 }
 
 
-.navdel1 img{
+.navdel1 img {
     height: 100px;
     width: 125px;
 }
@@ -176,13 +177,13 @@ nav {
     border: 0px solid var(--hvit);
 }
 
-.dropdown-content2  a {
+.dropdown-content2 a {
     text-decoration: none;
     font-size: 25px;
     padding: 5px;
 }
 
-.dropdown-content2 > div {
+.dropdown-content2>div {
     border: 1px solid var(--hvit);
 }
 
@@ -193,7 +194,8 @@ nav {
     border: none;
 }
 
-.drop1, .drop11{
+.drop1,
+.drop11 {
     color: var(--hvit);
     height: fit fit-content;
     background-color: inherit;
@@ -221,10 +223,12 @@ nav {
     align-items: center;
     height: 60px;
 }
+
 .ikonmørkmodus {
     font-size: 34px;
     margin-left: 20px;
 }
+
 .knappikon {
     background-color: inherit;
     border: none;
@@ -244,6 +248,7 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .logginnboks {
     display: block;
     height: 50px;
@@ -614,7 +619,7 @@ img {
     margin: auto;
 }
 
-ul {
+.oppsummering ul {
     list-style-type: circle;
     display: none;
     flex-direction: column;
@@ -622,7 +627,7 @@ ul {
     font-size: 18px;
 }
 
-ul li {
+.oppsummering ul li {
     margin-bottom: 10px;
 }
 
@@ -652,4 +657,23 @@ ul li {
     background: white;
     border: 1px solid #ddd;
     padding: 10px;
+}
+
+
+
+
+
+/*Media*/
+
+@media(max-width: 1000px) {
+
+    .logginn,
+    .abonner {
+        display: none;
+    }
+
+    .navbar a {
+        font
+    }
+
 }
