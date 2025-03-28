@@ -1,7 +1,7 @@
 :root {
     --blå: rgb(31, 156, 205);
     --svart: black;
-    --mørkblå: rgb(23, 59, 157);
+    --mørkblå: rgb(12, 62, 141);
     --hvit: white;
     --grå: grey;
     --lysblå: lightblue;
@@ -33,11 +33,11 @@ img {
     background-color: black;
 }
 .toggleBlå {
-    background-color: rgb(12, 62, 141);
+    background-color: var(--mørkblå);
 }
 
 .toggleArticle {
-    background-color: rgb(50, 49, 54);
+    background-color: var(--mørkblå);
 }
 
 .toggleOverskrift {
@@ -334,7 +334,7 @@ nav {
 }
 
 #overboks3 {
-    background-image: url('https://www.lmi.no/wp-content/uploads/2017/10/lungekreft-1024x768.jpg');
+    background-image: url('https://images.gfx.no/2000x/2878/2878432/NTB_5L2uUfe5o88.jpg');
 }
 
 .bokser div {
