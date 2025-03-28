@@ -8,6 +8,7 @@
     --articlebakgrunnsfarge: rgb(241, 235, 235);
     --articlebakgrunnmørk: rgb(50, 49, 54);
     --hvitblå: rgb(219, 219, 247);
+    --KARPEprimary: #ff6f61;
 }
 
 
@@ -483,13 +484,12 @@ a {
 
 
 /*fotter*/
-:root {
-    --primary: #222;
-    --KARPEprimary: #ff6f61;
-}
+
+
+
 
 #footerid {
-    background-color: var(--primary);
+    background-color: var(--blå);
 }
 
 .main {
@@ -507,7 +507,7 @@ a {
 
 .footer-liste h3 {
     font-size: 1.2rem;
-    color: grey;
+    color: white;
     position: relative;
     margin-bottom: 25px;
     font-family: Arial, sans-serif;
@@ -524,14 +524,14 @@ a {
 }
 
 .footer-liste ul li {
-    color: grey;
+    color: white;
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     margin-top: 10px;
 }
 
 .footer-linker ul li:hover {
-    color: var(--KARPEprimary);
+    color: var(--hvitblå);
     transform: scale(1.05) translateY(2px);
     transition: .4s;
 }
@@ -542,7 +542,7 @@ a {
 }
 
 .footer-linker ul li a:hover {
-    color: var(--KARPEprimary);
+    color: var(--hvitblå);
 }
 
 /* avis layout */
@@ -659,7 +659,7 @@ img {
 }
 
 main{
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 
