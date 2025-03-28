@@ -394,7 +394,6 @@ nav {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 400px 400px 400px 400px 300px;
     gap: 25px;
     margin-top: 40px;
 }
@@ -659,7 +658,9 @@ img {
     padding: 10px;
 }
 
-
+main{
+    margin-bottom: 70px;
+}
 
 
 
