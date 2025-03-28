@@ -64,3 +64,27 @@ function Mørkmodus() {
     }
 
 }
+
+
+function søk() {
+    const søkeord = document.getElementById("søkeord").value.toLowerCase();
+    const søkContent = document.getElementById("søkContent");
+    søkContent.innerHTML = "";
+    søkContent.style.display = "block";
+
+    const links = {
+        biler: ["meta mot ai", "biler.html"],
+    };
+
+
+    if (links[søkeord]) {
+        søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
+    } else {
+        søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+    }
+
+
+    setTimeout(function () {
+        søkContent.style.display = "none";
+    }, 5000);
+}
