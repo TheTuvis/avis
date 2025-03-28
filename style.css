@@ -6,6 +6,7 @@
     --grå: grey;
     --lysblå: lightblue;
     --articlebakgrunnsfarge:rgb(241, 235, 235);
+    --articlebakgrunnmørk: rgb(50, 49, 54);
     --hvitblå: rgb(219, 219, 247);
 }
 
@@ -30,18 +31,18 @@ img {
 
 
 .toggleSvart {
-    background-color: black;
+    background-color: var(--svart);
 }
 .toggleBlå {
     background-color: var(--mørkblå);
 }
 
 .toggleArticle {
-    background-color: var(--mørkblå);
+    background-color: var(--articlebakgrunnmørk);
 }
 
 .toggleOverskrift {
-    color: white;
+    color: var(--hvit);
 }
 
 
@@ -431,6 +432,8 @@ article.xlarge {
 a {
     text-decoration: none;
 }
+
+
 
 
 /* søke sak*/
