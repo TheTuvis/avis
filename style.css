@@ -1,3 +1,19 @@
+:root {
+    --blå: rgb(31, 156, 205);
+    --svart: black;
+    --mørkblå: rgb(23, 59, 157);
+    --hvit: white;
+    --grå: grey;
+    --lysblå: lightblue;
+    --articlebakgrunnsfarge:rgb(241, 235, 235);
+    --hvitblå: rgb(219, 219, 247);
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +24,24 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+/* Mørkmodus */
+
+
+.toggleSvart {
+    background-color: black;
+}
+.toggleBlå {
+    background-color: rgb(12, 62, 141);
+}
+
+.toggleArticle {
+    background-color: rgb(50, 49, 54);
+}
+
+.toggleOverskrift {
+    color: white;
 }
 
 
@@ -36,8 +70,14 @@ nav {
     justify-content: space-between;
     width: 100vw;
     height: 80px;
-    background-color: rgb(59, 173, 219);
+    background-color: var(--blå);
     align-items: center;
+}
+
+
+.navdel1 img{
+    height: 100px;
+    width: 125px;
 }
 
 .navbar {
@@ -55,7 +95,7 @@ nav {
 .navbar a {
     text-decoration: none;
     font-size: 40px;
-    color: white;
+    color: var(--hvit);
 
 }
 
@@ -94,17 +134,19 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
 }
 
 .abonner {
-    background-color: white;
-    color: rgb(59, 173, 219);
+    background-color: var(--hvit);
+    color: var(--blå);
 }
 
 .fa-bars {
     color: white;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
 #søkeord {
@@ -114,8 +156,8 @@ nav {
 #søkknapp {
     height: 33px;
     width: 50px;
-    background-color: white;
-    border: 1px solid grey;
+    background-color: var(--hvit);
+    border: 1px solid var(--grå);
 }
 
 .dropdown-content2 {
@@ -127,37 +169,110 @@ nav {
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 250px;
+    width: 350px;
     text-align: center;
-    background-color: rgb(59, 173, 219);;
+    background-color: inherit;
+    border: 0px solid var(--hvit);
 }
 
-.dropdown-content2 a {
-    display: block;
+.dropdown-content2  a {
     text-decoration: none;
     font-size: 25px;
-    border: 2px solid black;
     padding: 5px;
 }
 
-
-
-
-.blippern {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(59, 173, 219);
-    font-size: 25px;
-
+.dropdown-content2 > div {
+    border: 1px solid var(--hvit);
 }
 
+
 .dropbtn {
-    background-color: rgb(59, 173, 219);
+    background-color: inherit;
     font-size: 40px;
-    cursor: pointer;
     border: none;
 }
 
+.drop1, .drop11{
+    color: var(--hvit);
+    height: fit fit-content;
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.droptekst {
+    font-size: 25px;
+}
+
+.fa-circle-user {
+    font-size: 70px;
+}
+
+.droplinje {
+    color: var(--hvit);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.ikonmørkmodus {
+    font-size: 34px;
+    margin-left: 20px;
+}
+.knappikon {
+    background-color: inherit;
+    border: none;
+}
+
+.logginnContainer {
+    background-color: var(--hvit);
+    margin: auto;
+    margin-top: 30vh;
+    height: 400px;
+    width: 400px;
+    border: 13px solid var(--blå);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px var(--lysblå);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logginnboks {
+    display: block;
+    height: 50px;
+    width: 200px;
+}
+
+.logginnboks2 {
+    height: 180px;
+}
+
+.logginntopp {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logginnContainer button {
+    height: 40px;
+    min-width: 120px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px solid var(--hvit);
+    color: var(--hvit);
+    background-color: var(--blå);
+    padding: 10px;
+}
 
 
 
@@ -201,13 +316,13 @@ nav {
     border-radius: 20px;
     overflow: hidden;
     border: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px var(--svart);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .bokser div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px var(--svart);
 }
 
 #overboks1 {
@@ -244,8 +359,8 @@ nav {
     width: 100%;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    color: white;
+    background: linear-gradient(to top, black, transparent);
+    color: var(--hvit);
     font-size: 1.1rem;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -280,7 +395,7 @@ nav {
 
 
 article {
-    background-color: rgb(241, 235, 235);
+    background-color: var(--articlebakgrunnsfarge);
     grid-column: span 3;
     /*border: 2px solid black;*/
 }
@@ -485,9 +600,9 @@ img {
 /*Boks med kort oppsummering*/
 
 .oppsummering {
-    border: 2px solid rgb(23, 59, 157);
+    border: 2px solid var(--mørkblå);
     border-radius: 8px;
-    background-color: rgb(219, 219, 247);
+    background-color: var(--hvitblå);
     width: 80%;
     height: 160px;
     text-align: left;
@@ -515,8 +630,8 @@ ul li {
 }
 
 .visMer {
-    background-color: rgb(240, 240, 246);
-    border: 2px solid rgb(23, 59, 157);
+    background-color: var(--hvitblå);
+    border: 2px solid var(--mørkblå);
     border-radius: 30px;
     height: 50px;
     width: 120px;
@@ -524,4 +639,14 @@ ul li {
     bottom: 20px;
     left: 20px;
 
+}
+
+
+
+.søk-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
 }

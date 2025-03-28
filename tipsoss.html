@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>Abonner</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <nav class="navbar">
@@ -97,59 +95,19 @@
     </nav>
 
 
-    <script>
 
-        const menyEl = document.querySelector(".dropbtn")
-
-        function klikk() {
-            const dropdownElm = document.querySelector(".dropdown-content2")
-            if (dropdownElm.style.display == "flex") {
-                dropdownElm.style.display = "none"
-            } else {
-                dropdownElm.style.display = "flex"
-            }
-        }
-
-
-        const toggleEl = document.querySelector(".knappikon")
-        toggleEl.addEventListener("click", Mørkmodus)
-        const bodyEl = document.querySelector("body")
-        const navbarEl = document.querySelector(".navbar")
-        const articleEl = document.querySelector(".hei")
-
-        function Mørkmodus() {
-            let ikon1 = document.querySelector(".ikonmørkmodus")
-            if (ikon1.classList.contains("fa-toggle-off")) {
-                ikon1.classList.remove("fa-toggle-off")
-                ikon1.classList.add("fa-toggle-on")
-            } else {
-                ikon1.classList.remove("fa-toggle-on")
-                ikon1.classList.add("fa-toggle-off")
-            }
-            bodyEl.classList.toggle("toggleSvart")
-            navbarEl.classList.toggle("toggleBlå")
-        }
+    <div class="logginnContainer">
+        <div class="logginntopp"> 
+            <p>Logo</p>
+            <button>Ønsker du å legge til bilder?</button>
+        </div>
+        <h1 class="logginnO">Tips oss</h1>
+        <input class="logginnboks logginnboks2" type="text" placeholder="Send inn forslag til nyhet" />
+        <button id="logginnbtn">Send inn</button>
+    </div>
 
 
 
-        function søk() {
-            const søkeord = document.getElementById("søkeord").value.toLowerCase();
-            const søkContent = document.getElementById("søkContent");
-            søkContent.innerHTML = "";
-            søkContent.style.display = "block";
-
-            const links = {
-                biler: ["meta mot ai", "biler.html"],
-            };
-
-
-            if (links[søkeord]) {
-                søkContent.innerHTML = `<a href="${links[søkeord][1]}">${links[søkeord][0]}</a>`;
-            } else {
-                søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>

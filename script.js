@@ -1,3 +1,5 @@
+/* Liten og stor oppsummeringsboks*/
+
 const boksOppsummert = document.querySelector(".oppsummering")
 const punkterEl = document.querySelector(".punkter")
 const knappEl = document.querySelector(".visMer")
@@ -19,6 +21,7 @@ function storBoks() {
 }
 
 
+/* Dropdownmeny synes*/
 
 function klikk() {
     const dropdownElm = document.querySelector(".dropdown-content2")
@@ -29,3 +32,35 @@ function klikk() {
     }
 }
 
+
+
+
+/* Mørkmodus*/
+
+const toggleEl = document.querySelector(".knappikon")
+toggleEl.addEventListener("click", Mørkmodus)
+
+const bodyEl = document.querySelector("body")
+const navbarEl = document.querySelector(".navbar")
+const articleEl = document.querySelectorAll("article")
+const overskrifterEl = document.querySelectorAll("h3.artikkeltittel")
+
+function Mørkmodus() {
+    let ikon1 = document.querySelector(".ikonmørkmodus")
+    if (ikon1.classList.contains("fa-toggle-off")) {
+        ikon1.classList.remove("fa-toggle-off")
+        ikon1.classList.add("fa-toggle-on")
+    } else {
+        ikon1.classList.remove("fa-toggle-on")
+        ikon1.classList.add("fa-toggle-off")
+    }
+    bodyEl.classList.toggle("toggleSvart")
+    navbarEl.classList.toggle("toggleBlå")
+    for (let i = 0; i < articleEl.length; i++) {
+        articleEl[i].classList.toggle("toggleArticle")
+    }
+    for (let i = 0; i < overskrifterEl.length; i++) {
+        overskrifterEl[i].classList.toggle("toggleOverskrift")
+    }
+
+}

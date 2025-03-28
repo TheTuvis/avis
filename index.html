@@ -29,7 +29,13 @@
 
     <nav class="navbar">
         <div class="navdel1">
-            <a href="index.html"> Logo</a>
+            <a href="index.html">
+
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+
+
+            </a>
             <a href="index.html">Nyheter
                 <i class="fa-solid fa-house"></i>
             </a>
@@ -41,7 +47,7 @@
         </div>
 
 
-        </div>
+        
 
         <div class="navdel2">
             <div class="input-container">
@@ -82,7 +88,7 @@
     <main class="boksen">
 
 
-        
+
 
 
         <div class="container">
@@ -113,11 +119,11 @@
 
             <article class="small">
                 <a href="droner-mot-sorgrensen.html">
-                <img class="artikkelbilde"
-                    src=https://www.iphotography.com/wp-content/uploads/2023/03/Drone-Photography-for-Beginners-1.jpg
-                    alt="">
-                <h3 class="artikkeltittel">Droner mot sørgrensen i USA</h3>
-            </a>
+                    <img class="artikkelbilde"
+                        src=https://www.iphotography.com/wp-content/uploads/2023/03/Drone-Photography-for-Beginners-1.jpg
+                        alt="">
+                    <h3 class="artikkeltittel">Droner mot sørgrensen i USA</h3>
+                </a>
             </article>
 
             <article class="xlarge">
@@ -130,8 +136,8 @@
 
             <article class="small">
                 <a href="kraftkrise.html">
-                    <img class="artikkelbilde"
-                        src="https://gfx.nrk.no/EA7oca3d3TJxh2vNexUukwx-KjJf-WgnX2uvs7MuWNuQ.jpg" alt="">
+                    <img class="artikkelbilde" src="https://gfx.nrk.no/EA7oca3d3TJxh2vNexUukwx-KjJf-WgnX2uvs7MuWNuQ.jpg"
+                        alt="">
                     <h3 class="artikkeltittel">Kraftkrise</h3>
                 </a>
             </article>
@@ -139,7 +145,8 @@
             <article class="small">
                 <a href="chip.html">
                     <img class="artikkelbilde"
-                        src="https://premium.vgc.no/v2/images/9d6eb6fe-18c4-4817-a46e-e95595ecba22?fit=crop&format=auto&h=1536&w=2048&s=9ccab2839407149200802332ed7d28737e29707b" alt="">
+                        src="https://premium.vgc.no/v2/images/9d6eb6fe-18c4-4817-a46e-e95595ecba22?fit=crop&format=auto&h=1536&w=2048&s=9ccab2839407149200802332ed7d28737e29707b"
+                        alt="">
                     <h3 class="artikkeltittel">Fra stor kabelsalat til chip</h3>
                 </a>
             </article>
@@ -155,8 +162,8 @@
 
         <div class="over ">
 
-            
-            
+
+
 
             <div class="bokser blippy">
 
@@ -238,30 +245,30 @@
 
 
 
-    <script>
+    <script src="script.js">
 
         function søk() {
-  const søkeord = document.getElementById("søkeord").value.toLowerCase();
-  const søkContent = document.getElementById("søkContent");
-  søkContent.innerHTML = "";
-  søkContent.style.display = "block";
+            const søkeord = document.getElementById("søkeord").value.toLowerCase();
+            const søkContent = document.getElementById("søkContent");
+            søkContent.innerHTML = "";
+            søkContent.style.display = "block";
 
-  const links = {
-    biler: ["Meta mot AI", "biler.html"],
-  };
+            const links = {
+                biler: ["Meta mot AI", "biler.html"],
+            };
 
- 
-  if (links[søkeord]) {
-    søkContent.innerHTML = `<a href="${links[søkeord][1]}" onclick="window.location.href='${links[søkeord][1]}'">${links[søkeord][0]}</a>`;
-  } else {
-    søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
-  }
 
- 
-  setTimeout(function() {
-    søkContent.style.display = "none";
-  }, 5000);
-}
+            if (links[søkeord]) {
+                søkContent.innerHTML = `<a href="${links[søkeord][1]}" onclick="window.location.href='${links[søkeord][1]}'">${links[søkeord][0]}</a>`;
+            } else {
+                søkContent.innerHTML = "<p>Ingen resultater funnet</p>";
+            }
+
+
+            setTimeout(function () {
+                søkContent.style.display = "none";
+            }, 5000);
+        }
 
 
 
