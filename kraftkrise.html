@@ -14,61 +14,154 @@
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">Kraftkrise: Staten har brukt 18 ganger mer på strømstøtte enn strømsparing</h1>
-        <p class="innledning"> Norske huseiere har fått 47 milliarder kroner i strømstøtte av staten siden 2021. Karen reduserte strømforbruket med 80 prosent, men fikk bare dekket en brøkdel av utgiftene.</p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="https://gfx.nrk.no/CD1mk-hYD9vFEDgxYD_ncAuWtBYioxXVrcWpiHbP6cmQ.jpg" alt="">
-        <p class="bildetekst">NULL: Karen Byskov Lindberg gjorde om 60-talls huset til et Nullenergihus.</p>
-        <p class="kildeBilde"> FOTO: SNORRE TØNSET / NRK</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert torsdag 20. mars kl. 09:53</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Snorre Tønset </p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
 
-        <div class="hovedtekst">
-            <p class="boldTekst">Et hjem som produserer mer strøm enn det bruker</p>
-            <p>Karen Byskov Lindberg og ektemannen har omgjort sitt gamle 60-tallshus til et «nullhus» </p> 
-            <p> – Et hjem som produserer mer strøm enn det bruker i løpet av året. Det betyr at huset vårt bruker null strøm over året netto, forteller Karen entusiastisk.</p>
-            <p></p>
-            
-            <p class="boldTekst">Fra energisluk til nullhus</p>
-            <p>Da de kjøpte huset for åtte år siden, var det et energisluk med trekk og høyt forbruk.</p>
-            <p> – Vi var oppe i 52.000 kilowattimer energiforbruk i året, forklarer Karen. Karen, som har doktorgrad i nullenergibygg, og ektemannen gjennomførte omfattende oppgraderinger. De etterisolerte vegger og tak, installerte en varmepumpe, trelags vinduer og balansert ventilasjon. De satte også opp solceller som produserer 10.000 kWh årlig.</p>      
-            <p></p>
-            <p class="boldTekst">Lavt strømforbruk og sparing</p>
-            <p>I dag holder huset jevn temperatur på 21 grader hele året. Selv på de kaldeste vinterdagene trenger de bare 2 kWh for å varme opp hele huset.</p>
-            <p> – For å holde hele huset varmt trengte vi å bruke to kilowatt. Så det tilsvarer én enkelt panelovn, sier Karen. Strømregningen deres var på 1300 kroner i januar, inkludert lading av elbil. 
-            <p></p>
-            
-            <p class="underoverskrift">Kostnader og støtte</p>
-            <p>Oppgraderingene kostet 1,4 millioner kroner, men de fikk støtte på 191.000 fra Enova. Hun påpeker at de har gått glipp av 46.000 kroner i strømstøtte, ettersom de bruker så lite strøm. 
-                Det folk vil ha, er lav strømregning, men det er ikke nødvendigvis at du trenger å ha lav strømpris. Du kan også redusere strømregningen ved å redusere forbruket ditt,» avslutter Karen.
-            </p>
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
 
-            <p class="boldTekst">Fremtiden for nullhus</p>
-            <p>Karen regner med at det vil ta 41 år før de har tjent inn pengene brukt på oppgraderingene med dagens strømpris. Med den foreslåtte «norgesprisen» vil det ta 54 år. Karen mener at staten bør prioritere støtte til energieffektivisering fremfor å subsidiere høy strømpris. 
-             <p>   – Vi må bruke pengene klokt. Da må vi bruke de pengene til å løse problemet, og problemet er at vi har for lite strøm,» sier Guro Hauge i NHO, som støtter Karen sin mening om at mer støtte bør gå til energieffektivisering.</p>
-            
-            <p class="boldTekst">Energiministerens synspunkt</p>
-            <p>Energiminister Terje Aasland (Ap) er uenig i at staten bruker pengene uklokt. 
-            <p>  – Vi støtter enøktiltak. Vi har dobla bevilgningen i denne stortingsperioden kontra hva forrige regjering gjorde i forrige stortingsperiode, sier Aasland. Han understreker at staten samtidig har som mål å trygge husholdningenes økonomi ved å støtte husholdningene med strømstøtte, spesielt når strømprisene er høye.</p>
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
+            </div>
         </div>
+    </nav>
 
 
+<main>
 
-    </div>
+    
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">Kraftkrise: Staten har brukt 18 ganger mer på strømstøtte enn strømsparing</h1>
+            <p class="innledning"> Norske huseiere har fått 47 milliarder kroner i strømstøtte av staten siden 2021. Karen reduserte strømforbruket med 80 prosent, men fikk bare dekket en brøkdel av utgiftene.</p>
+    
+        </div>
+    
+        <div class="containerArtikkel">
+    
+            <img class="førsteBilde" src="https://gfx.nrk.no/CD1mk-hYD9vFEDgxYD_ncAuWtBYioxXVrcWpiHbP6cmQ.jpg" alt="">
+            <p class="bildetekst">NULL: Karen Byskov Lindberg gjorde om 60-talls huset til et Nullenergihus.</p>
+            <p class="kildeBilde"> FOTO: SNORRE TØNSET / NRK</p>
+    
+            <div class="publisertav">
+                <p>Publisert torsdag 20. mars kl. 09:53</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Snorre Tønset </p>
+    
+                </div>
+            </div>
+    
+            <div class="hovedtekst">
+                <p class="boldTekst">Et hjem som produserer mer strøm enn det bruker</p>
+                <p>Karen Byskov Lindberg og ektemannen har omgjort sitt gamle 60-tallshus til et «nullhus» </p> 
+                <p> – Et hjem som produserer mer strøm enn det bruker i løpet av året. Det betyr at huset vårt bruker null strøm over året netto, forteller Karen entusiastisk.</p>
+                <p></p>
+                
+                <p class="boldTekst">Fra energisluk til nullhus</p>
+                <p>Da de kjøpte huset for åtte år siden, var det et energisluk med trekk og høyt forbruk.</p>
+                <p> – Vi var oppe i 52.000 kilowattimer energiforbruk i året, forklarer Karen. Karen, som har doktorgrad i nullenergibygg, og ektemannen gjennomførte omfattende oppgraderinger. De etterisolerte vegger og tak, installerte en varmepumpe, trelags vinduer og balansert ventilasjon. De satte også opp solceller som produserer 10.000 kWh årlig.</p>      
+                <p></p>
+                <p class="boldTekst">Lavt strømforbruk og sparing</p>
+                <p>I dag holder huset jevn temperatur på 21 grader hele året. Selv på de kaldeste vinterdagene trenger de bare 2 kWh for å varme opp hele huset.</p>
+                <p> – For å holde hele huset varmt trengte vi å bruke to kilowatt. Så det tilsvarer én enkelt panelovn, sier Karen. Strømregningen deres var på 1300 kroner i januar, inkludert lading av elbil. 
+                <p></p>
+                
+                <p class="underoverskrift">Kostnader og støtte</p>
+                <p>Oppgraderingene kostet 1,4 millioner kroner, men de fikk støtte på 191.000 fra Enova. Hun påpeker at de har gått glipp av 46.000 kroner i strømstøtte, ettersom de bruker så lite strøm. 
+                    Det folk vil ha, er lav strømregning, men det er ikke nødvendigvis at du trenger å ha lav strømpris. Du kan også redusere strømregningen ved å redusere forbruket ditt,» avslutter Karen.
+                </p>
+    
+                <p class="boldTekst">Fremtiden for nullhus</p>
+                <p>Karen regner med at det vil ta 41 år før de har tjent inn pengene brukt på oppgraderingene med dagens strømpris. Med den foreslåtte «norgesprisen» vil det ta 54 år. Karen mener at staten bør prioritere støtte til energieffektivisering fremfor å subsidiere høy strømpris. 
+                 <p>   – Vi må bruke pengene klokt. Da må vi bruke de pengene til å løse problemet, og problemet er at vi har for lite strøm,» sier Guro Hauge i NHO, som støtter Karen sin mening om at mer støtte bør gå til energieffektivisering.</p>
+                
+                <p class="boldTekst">Energiministerens synspunkt</p>
+                <p>Energiminister Terje Aasland (Ap) er uenig i at staten bruker pengene uklokt. 
+                <p>  – Vi støtter enøktiltak. Vi har dobla bevilgningen i denne stortingsperioden kontra hva forrige regjering gjorde i forrige stortingsperiode, sier Aasland. Han understreker at staten samtidig har som mål å trygge husholdningenes økonomi ved å støtte husholdningene med strømstøtte, spesielt når strømprisene er høye.</p>
+    
+            </div>
+    
+    
+    
+        </div>
+</main>
 
+<script src="script.js"></script>
 </body>
 
 </html>
