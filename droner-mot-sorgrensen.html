@@ -8,137 +8,248 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">
-            <!DOCTYPE html>
-            <html lang="en">
+    <nav class="navbar">
 
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Mal til artikkel </title>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-                    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-                <style>
-                    .hovedtekst {
-                        font-weight: lighter;
-                    }
-                </style>
-            </head>
 
-            <body>
+        </div>
 
-                <div class="containerOverskrift">
-                    <h1 class="overskriftArtikkel">Hvordan droner former sikkerheten ved den amerikanske sørgrensen
-                    </h1>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
 
                 </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-                <div class="containerArtikkel">
+            </div>
+        </div>
+    </nav>
 
-                    <img class="førsteBilde" src="bilder/drone-at-border.jpg" alt="">
+    <main>
+
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Mal til artikkel </title>
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+                        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                    <style>
+                        .hovedtekst {
+                            font-weight: lighter;
+                        }
+                    </style>
+                </head>
+
+                <body>
+
+                    <div class="containerOverskrift">
+                        <h1 class="overskriftArtikkel">Hvordan droner former sikkerheten ved den amerikanske sørgrensen
+                        </h1>
 
 
-                    <div class="publisertav">
-                        <p>Publisert 7. mars</p>
-                        <div class="skrevetav">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <p> Jack M.Germain </p>
-                            
-                
+                    </div>
+
+                    <div class="containerArtikkel">
+
+                        <img class="førsteBilde" src="bilder/drone-at-border.jpg" alt="">
+
+
+                        <div class="publisertav">
+                            <p>Publisert 7. mars</p>
+                            <div class="skrevetav">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <p> Jack M.Germain </p>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="oppsummering">
+                            <p class="punkterOverskrift">Kortversjonen</p>
+                            <ul class="punkter">
+                                <li>Droner har blitt et viktig verktøy for både sikkerhetsmyndigheter og kriminelle
+                                    nettverk langs den amerikanske sørgrensen. Teknologien utvikler seg raskt, og
+                                    både muligheter og utfordringer øker.</li>
+                                <li>Usporbart droneteknologi brukes til smugling og ulovlig overvåking. Myndighetene
+                                    har problemer med å oppdage dem ved hjelp av tradisjonelle metoder.</li>
+                                <li>Gargoyle Systems utvikler et desentralisert dronedeteksjonsnettverk som bruker
+                                    lydsensorer for å avsløre droner som ikke sender radiosignaler.</li>
+                                <li>DHS, FAA og lokale politimyndigheter øker innsatsen for å bedre dronedeteksjon.
+                                    Det foreslås å innføre en "drone-tsar" for å koordinere sikkerhetsstrategier.
+                                </li>
+                                <li>Droner brukes også til søk- og redningsoperasjoner, medisinsk transport og
+                                    katastrofehjelp. Teknologien kan gi store fordeler ved ansvarlig bruk.</li>
+                            </ul>
+                            <button class="visMer" onclick="storBoks()">Vis Mer </button>
+                        </div>
+
+                        <div class="hovedtekst">
+                            <p>Ettersom droner blir et sentralt verktøy i både sikkerhet og ulovlige operasjoner, har
+                                himmelen over den sørlige grensen til USA blitt en høyteknologisk slagmark. Både
+                                rettshåndhevelsesbyråer og narkotikakarteller utnytter droneteknologi for overvåking,
+                                smugling og motovervåking, noe som vekker presserende bekymringer om nasjonal sikkerhet.
+                            </p>
+                            <p>Med fremveksten av usporbare "mørke droner" som unngår tradisjonelle deteksjonsmetoder,
+                                har
+                                behovet for avanserte droneovervåkingssystemer aldri vært mer kritisk. I spissen for
+                                denne
+                                innsatsen er Mike Fraietta, medgründer og administrerende direktør i Gargoyle Systems,
+                                som
+                                er banebrytende for et desentralisert dronedeteksjonsnettverk for å motvirke nye trusler
+                                og
+                                øke offentlig bevissthet om luftaktivitet. </p>
+                            <p>I følge Fraietta møter tradisjonelle deteksjonsmetoder for luftfartøy utfordringer fra
+                                mørke
+                                droner – usporbare ubemannede luftfartøyer (UAV) som bruker kanalhopping eller
+                                fiberoptisk
+                                teknologi for å unngå RF-deteksjon.</p>
+                            <p>For å motvirke dette, fokuserer Gargoyle Systems på akustisk deteksjon, spesielt for
+                                fiberoptiske bundne droner som ikke sender ut RF-signaler. Disse dronene utgjør en
+                                betydelig
+                                utfordring for myndighetene, siden de kan operere over lange avstander uten deteksjon.
+                            </p>
+                            <p> Hans visjon for fremtiden for dronedeteksjon og dens fordelaktige bruk er klar. Et
+                                omfattende dronedeteksjonsnettverk må beskytte amerikanske borgere og infrastruktur
+                                samtidig
+                                som det muliggjør etisk bruk av droner for verdifulle applikasjoner.
+
+                                "Utfordringen er ikke bare å oppdage droner. Det er å sikre at de brukes på en ansvarlig
+                                måte," sa Fraietta til TechNewsWorld.</p>
+                            <p class="underoverskrift">Nye dronedeteksjonsstrategier dukker opp</p>
+                            <p>Fraietta lanserte Gargoyle Systems i fjor. Blant sine andre prosjekter utvikler selskapet
+                                verktøy for å overvinne begrensninger forårsaket av droneinntrengning. Det vil snart
+                                lansere
+                                et produkt som lager et personlig desentralisert geo-gjerde eller grensemur som samler
+                                inn
+                                data om droner som krysser et område.
+
+                                Som en sertifisert FAA dronepilot trener Fraietta kontinuerlig i dronesikkerhet. Han
+                                ønsker
+                                å følge med på endringene som gjøres for å sikre sørgrensen under nye lover.
+                            </p>
+                            <p>"Vi har rådgivere i FAA og Department of Defense and Homeland Security. Så vi følger med
+                                på
+                                hva som skjer, men er ikke offisielt involvert på noen måte med de nye folkene der nede
+                                eller tidligere," forklarte han.</p>
+                            <p class="underoverskrift">Hvordan droner endrer grensesikkerhet</p>
+                            <p>Mens droner byr på sikkerhetsutfordringer, tilbyr de banebrytende potensial for nødetater
+                                og
+                                søk-og-redningsoperasjoner. Fraietta er begeistret for utviklingen av "vennlige droner"
+                                designet for å levere medisinsk hjelp, transportere viktige forsyninger og hjelpe til
+                                med
+                                katastrofehjelp.</p>
+                            <p>Siden januar har amerikanske grenseagenter justert rollen som droner kan spille for å
+                                holde
+                                grensene sikre. Ifølge Fraietta skjer det nå økt samarbeid mellom DHS, lokal
+                                rettshåndhevelse og FAA. Han sammenligner disse anstrengelsene med opprettelsen av TSA
+                                etter
+                                9/11,
+
+                                "En drone-tsar kan være nødvendig for å koordinere nasjonale dronesikkerhetsinitiativer
+                                sammen med nylige suksesser innen grensesikkerhet," sa han.
+
+                                Til tross for forsøk på å forbedre dronedeteksjon, advarer Fraietta om at mørke droner
+                                som
+                                opererer utenfor radiofrekvenser er den største bekymringen. Som et resultat av dette
+                                tyr
+                                rettshåndhevelsesbyråer i økende grad til AI og akustisk deteksjon for å identifisere
+                                ulovlig droneaktivitet.</p>
+                            <p>Han forklarte at bruk av akustiske deteksjonsmetoder er avhengig av å perfeksjonere evnen
+                                til
+                                å identifisere de unike lydene til propellstigningene, blant andre faktorer.</p>
 
                         </div>
-                    </div>
 
-                    <div class="oppsummering">
-                        <p class="punkterOverskrift">Kortversjonen</p>
-                        <ul class="punkter">
-                            <li>Droner har blitt et viktig verktøy for både sikkerhetsmyndigheter og kriminelle
-                                nettverk langs den amerikanske sørgrensen. Teknologien utvikler seg raskt, og
-                                både muligheter og utfordringer øker.</li>
-                            <li>Usporbart droneteknologi brukes til smugling og ulovlig overvåking. Myndighetene
-                                har problemer med å oppdage dem ved hjelp av tradisjonelle metoder.</li>
-                            <li>Gargoyle Systems utvikler et desentralisert dronedeteksjonsnettverk som bruker
-                                lydsensorer for å avsløre droner som ikke sender radiosignaler.</li>
-                            <li>DHS, FAA og lokale politimyndigheter øker innsatsen for å bedre dronedeteksjon.
-                                Det foreslås å innføre en "drone-tsar" for å koordinere sikkerhetsstrategier.
-                            </li>
-                            <li>Droner brukes også til søk- og redningsoperasjoner, medisinsk transport og
-                                katastrofehjelp. Teknologien kan gi store fordeler ved ansvarlig bruk.</li>
-                        </ul>
-                        <button class="visMer" onclick="storBoks()">Vis Mer </button>
-                    </div>
 
-                    <div class="hovedtekst">
-                        <p>Ettersom droner blir et sentralt verktøy i både sikkerhet og ulovlige operasjoner, har
-                            himmelen over den sørlige grensen til USA blitt en høyteknologisk slagmark. Både
-                            rettshåndhevelsesbyråer og narkotikakarteller utnytter droneteknologi for overvåking,
-                            smugling og motovervåking, noe som vekker presserende bekymringer om nasjonal sikkerhet.
-                        </p>
-                        <p>Med fremveksten av usporbare "mørke droner" som unngår tradisjonelle deteksjonsmetoder, har
-                            behovet for avanserte droneovervåkingssystemer aldri vært mer kritisk. I spissen for denne
-                            innsatsen er Mike Fraietta, medgründer og administrerende direktør i Gargoyle Systems, som
-                            er banebrytende for et desentralisert dronedeteksjonsnettverk for å motvirke nye trusler og
-                            øke offentlig bevissthet om luftaktivitet. </p>
-                        <p>I følge Fraietta møter tradisjonelle deteksjonsmetoder for luftfartøy utfordringer fra mørke
-                            droner – usporbare ubemannede luftfartøyer (UAV) som bruker kanalhopping eller fiberoptisk
-                            teknologi for å unngå RF-deteksjon.</p>
-                        <p>For å motvirke dette, fokuserer Gargoyle Systems på akustisk deteksjon, spesielt for
-                            fiberoptiske bundne droner som ikke sender ut RF-signaler. Disse dronene utgjør en betydelig
-                            utfordring for myndighetene, siden de kan operere over lange avstander uten deteksjon. </p>
-                        <p> Hans visjon for fremtiden for dronedeteksjon og dens fordelaktige bruk er klar. Et
-                            omfattende dronedeteksjonsnettverk må beskytte amerikanske borgere og infrastruktur samtidig
-                            som det muliggjør etisk bruk av droner for verdifulle applikasjoner.
-
-                            "Utfordringen er ikke bare å oppdage droner. Det er å sikre at de brukes på en ansvarlig
-                            måte," sa Fraietta til TechNewsWorld.</p>
-                        <p class="underoverskrift">Nye dronedeteksjonsstrategier dukker opp</p>
-                        <p>Fraietta lanserte Gargoyle Systems i fjor. Blant sine andre prosjekter utvikler selskapet
-                            verktøy for å overvinne begrensninger forårsaket av droneinntrengning. Det vil snart lansere
-                            et produkt som lager et personlig desentralisert geo-gjerde eller grensemur som samler inn
-                            data om droner som krysser et område.
-
-                            Som en sertifisert FAA dronepilot trener Fraietta kontinuerlig i dronesikkerhet. Han ønsker
-                            å følge med på endringene som gjøres for å sikre sørgrensen under nye lover.
-                        </p>
-                        <p>"Vi har rådgivere i FAA og Department of Defense and Homeland Security. Så vi følger med på
-                            hva som skjer, men er ikke offisielt involvert på noen måte med de nye folkene der nede
-                            eller tidligere," forklarte han.</p>
-                        <p class="underoverskrift">Hvordan droner endrer grensesikkerhet</p>
-                        <p>Mens droner byr på sikkerhetsutfordringer, tilbyr de banebrytende potensial for nødetater og
-                            søk-og-redningsoperasjoner. Fraietta er begeistret for utviklingen av "vennlige droner"
-                            designet for å levere medisinsk hjelp, transportere viktige forsyninger og hjelpe til med
-                            katastrofehjelp.</p>
-                        <p>Siden januar har amerikanske grenseagenter justert rollen som droner kan spille for å holde
-                            grensene sikre. Ifølge Fraietta skjer det nå økt samarbeid mellom DHS, lokal
-                            rettshåndhevelse og FAA. Han sammenligner disse anstrengelsene med opprettelsen av TSA etter
-                            9/11,
-
-                            "En drone-tsar kan være nødvendig for å koordinere nasjonale dronesikkerhetsinitiativer
-                            sammen med nylige suksesser innen grensesikkerhet," sa han.
-
-                            Til tross for forsøk på å forbedre dronedeteksjon, advarer Fraietta om at mørke droner som
-                            opererer utenfor radiofrekvenser er den største bekymringen. Som et resultat av dette tyr
-                            rettshåndhevelsesbyråer i økende grad til AI og akustisk deteksjon for å identifisere
-                            ulovlig droneaktivitet.</p>
-                        <p>Han forklarte at bruk av akustiske deteksjonsmetoder er avhengig av å perfeksjonere evnen til
-                            å identifisere de unike lydene til propellstigningene, blant andre faktorer.</p>
 
                     </div>
+    </main>
 
+    <script src="script.js"></script>
+</body>
 
-
-                </div>
-
-<script src="script.js"></script>
-            </body>
-
-            </html>
+</html>

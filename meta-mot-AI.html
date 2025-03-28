@@ -15,100 +15,209 @@
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">Meta lover å redusere falskt "content" og "deepfakes" før valgkampen i australia.
-        </h1>
-        <p class="innledning">
-        </p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="Bilder/meta.png" alt="">
-        <p class="bildetekst">Logoen til Meta sees ved inngangen til selskapets midlertidige stand i forkant av World
-            Economic Forum (WEF) i Davos, Sveits 18. januar 2025.</p>
-        <p class="kildeBilde">FOTO: Reuters</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert tirsdag 18. mars</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Reuters </p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
+
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
             </div>
         </div>
-        <div class="oppsummering">
-            <p class="punkterOverskrift">Kortversjonen</p>
-            <ul class="punkter">
-                <li>Meta, selskapet bak Facebook og Instagram, tar grep for å bekjempe feilinformasjon og deepfakes før
-                    det kommende australske valget.</li>
-                <li>Meta samarbeider med nyhetsbyråer for å avdekke falskt innhold og begrense spredningen av villedende
-                    informasjon.</li>
-                <li>AI-generert innhold som manipulerer virkeligheten, vil enten bli fjernet eller merket og
-                    nedprioritert i nyhetsfeeden.</li>
-                <li>Meta vil fjerne innhold som kan føre til vold eller påvirke stemmegivning, og innføre
-                    advarselsetiketter på villedende innlegg.</li>
-                <li>Australske myndigheter vurderer avgifter på digitale plattformer og strengere aldersgrenser for
-                    sosiale medier, noe som kan påvirke Metas fremtidige strategi.</li>
-            </ul>
-            <button class="visMer" onclick="storBoks()">Vis Mer </button>
-        </div>
+    </nav>
 
 
+    <main>
 
-        <div class="hovedtekst">
-            <p>SYDNEY, 18. mars (Reuters) - Facebook og Instagram-eier Meta Platforms (META.O), åpner en
-                ny fane sa tirsdag at dets uavhengige faktasjekkingsprogram i Australia vil hjelpe til med å oppdage og
-                fjerne falskt innhold og deepfakes, ettersom det tar sikte på å dempe feilinformasjon foran et nasjonalt
-                valg innen mai.
-                I et blogginnlegg sa det sosiale medieselskapet at alt innhold som kan føre til overhengende vold og
-                fysisk
-                skade, og forstyrre stemmegivningen, vil bli fjernet, mens distribusjonen av villedende innhold gjennom
-                plattformene deres vil bli begrenset.</p>
-            <p>"Når innhold blir avkreftet av faktasjekkere, fester vi advarselsetiketter til innholdet og reduserer
-                distribusjonen i Feed og Explore, slik at det er mindre sannsynlighet for å bli sett," sa Cheryl Seeto,
-                Metas sjef for policy i Australia.
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">Meta lover å redusere falskt "content" og "deepfakes" før valgkampen i
+                australia.
+            </h1>
+            <p class="innledning">
             </p>
-            <p class="boldTekst">Nyhetsbyråene Agence France-Presse og Australian Associated Press vil vurdere innholdet
-                til Meta, sa
-                Seeto. </p>
-            <p>Meta skrotet sine amerikanske faktasjekkingsprogrammer i januar og reduserte
-                fortauskanten av diskusjoner rundt omstridte emner som immigrasjon og kjønnsidentitet, og bøyde seg for
-                press fra konservative om å gjennomføre den største overhalingen av sin tilnærming til å administrere
-                politisk innhold på tjenestene sine.</p>
-            <p>Foreininga har jobba tett saman med rettsmedisinsk institutt og med Aust politidistrikt. Leivningane er
-                førebels ikkje heva, men det vil dei truleg bli. </p>
-            <p class="underoverskrift">Meta sliter med Deepfakes og regulatoriske utfordringer foran det tette
-                australske valget</p>
-            <p> Foruten falskt innhold, kjemper sosiale medieselskaper også for å inneholde dype falske –
-                hyperrealistiske videoer, fotografier eller lyd generert gjennom AI-algoritmer som presenteres som ekte.
-            </p>
-
-            <p>Meta said any deepfake content that violates its policies would be removed, or rated "altered" and then
-                ranked down in its feed to limit its distribution. Users will also be prompted to disclose when they
-                post or share AI-generated content.
-            </p>
-            <p class="boldTekst">"For innhold som ikke bryter retningslinjene våre, mener vi fortsatt at det er viktig
-                for folk å vite når
-                fotorealistisk innhold de ser har blitt laget ved hjelp av AI," sa Seeto.</p>
-            <p>Meningsmålinger viser et tett valg i Australia med opposisjonen Liberal-National koalisjonen foran det
-                regjerende sentrum-venstre Labour-partiet med en knapp margin.</p>
-            <p class="boldTekst">Metas tilnærming i Australia er i samsvar med deres innsats for å forhindre
-                feilinformasjon under de
-                nylige valgene i India, Storbritannia og USA, sa Seeto.</p>
-            <p>Meta står overfor flere regulatoriske motvinder i Australia med regjeringen som planlegger å pålegge
-                store teknologibedrifter en avgift for å kompensere for annonseinntekter de genererer fra deling av
-                lokalt nyhetsinnhold.</p>
-            <p>Meta og andre sosiale medier-firmaer må også håndheve et forbud for brukere under 16 innen utgangen av
-                dette året med selskapene som konsulterer myndighetene om hvordan de bør rullere restriksjonene.</p>
 
         </div>
 
+        <div class="containerArtikkel">
+
+            <img class="førsteBilde" src="Bilder/meta.png" alt="">
+            <p class="bildetekst">Logoen til Meta sees ved inngangen til selskapets midlertidige stand i forkant av
+                World
+                Economic Forum (WEF) i Davos, Sveits 18. januar 2025.</p>
+            <p class="kildeBilde">FOTO: Reuters</p>
+
+            <div class="publisertav">
+                <p>Publisert tirsdag 18. mars</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Reuters </p>
+
+                </div>
+            </div>
+            <div class="oppsummering">
+                <p class="punkterOverskrift">Kortversjonen</p>
+                <ul class="punkter">
+                    <li>Meta, selskapet bak Facebook og Instagram, tar grep for å bekjempe feilinformasjon og deepfakes
+                        før
+                        det kommende australske valget.</li>
+                    <li>Meta samarbeider med nyhetsbyråer for å avdekke falskt innhold og begrense spredningen av
+                        villedende
+                        informasjon.</li>
+                    <li>AI-generert innhold som manipulerer virkeligheten, vil enten bli fjernet eller merket og
+                        nedprioritert i nyhetsfeeden.</li>
+                    <li>Meta vil fjerne innhold som kan føre til vold eller påvirke stemmegivning, og innføre
+                        advarselsetiketter på villedende innlegg.</li>
+                    <li>Australske myndigheter vurderer avgifter på digitale plattformer og strengere aldersgrenser for
+                        sosiale medier, noe som kan påvirke Metas fremtidige strategi.</li>
+                </ul>
+                <button class="visMer" onclick="storBoks()">Vis Mer </button>
+            </div>
 
 
-    </div>
-<script src="script.js"></script>
+
+            <div class="hovedtekst">
+                <p>SYDNEY, 18. mars (Reuters) - Facebook og Instagram-eier Meta Platforms (META.O), åpner en
+                    ny fane sa tirsdag at dets uavhengige faktasjekkingsprogram i Australia vil hjelpe til med å oppdage
+                    og
+                    fjerne falskt innhold og deepfakes, ettersom det tar sikte på å dempe feilinformasjon foran et
+                    nasjonalt
+                    valg innen mai.
+                    I et blogginnlegg sa det sosiale medieselskapet at alt innhold som kan føre til overhengende vold og
+                    fysisk
+                    skade, og forstyrre stemmegivningen, vil bli fjernet, mens distribusjonen av villedende innhold
+                    gjennom
+                    plattformene deres vil bli begrenset.</p>
+                <p>"Når innhold blir avkreftet av faktasjekkere, fester vi advarselsetiketter til innholdet og reduserer
+                    distribusjonen i Feed og Explore, slik at det er mindre sannsynlighet for å bli sett," sa Cheryl
+                    Seeto,
+                    Metas sjef for policy i Australia.
+                </p>
+                <p class="boldTekst">Nyhetsbyråene Agence France-Presse og Australian Associated Press vil vurdere
+                    innholdet
+                    til Meta, sa
+                    Seeto. </p>
+                <p>Meta skrotet sine amerikanske faktasjekkingsprogrammer i januar og reduserte
+                    fortauskanten av diskusjoner rundt omstridte emner som immigrasjon og kjønnsidentitet, og bøyde seg
+                    for
+                    press fra konservative om å gjennomføre den største overhalingen av sin tilnærming til å
+                    administrere
+                    politisk innhold på tjenestene sine.</p>
+                <p>Foreininga har jobba tett saman med rettsmedisinsk institutt og med Aust politidistrikt. Leivningane
+                    er
+                    førebels ikkje heva, men det vil dei truleg bli. </p>
+                <p class="underoverskrift">Meta sliter med Deepfakes og regulatoriske utfordringer foran det tette
+                    australske valget</p>
+                <p> Foruten falskt innhold, kjemper sosiale medieselskaper også for å inneholde dype falske –
+                    hyperrealistiske videoer, fotografier eller lyd generert gjennom AI-algoritmer som presenteres som
+                    ekte.
+                </p>
+
+                <p>Meta said any deepfake content that violates its policies would be removed, or rated "altered" and
+                    then
+                    ranked down in its feed to limit its distribution. Users will also be prompted to disclose when they
+                    post or share AI-generated content.
+                </p>
+                <p class="boldTekst">"For innhold som ikke bryter retningslinjene våre, mener vi fortsatt at det er
+                    viktig
+                    for folk å vite når
+                    fotorealistisk innhold de ser har blitt laget ved hjelp av AI," sa Seeto.</p>
+                <p>Meningsmålinger viser et tett valg i Australia med opposisjonen Liberal-National koalisjonen foran
+                    det
+                    regjerende sentrum-venstre Labour-partiet med en knapp margin.</p>
+                <p class="boldTekst">Metas tilnærming i Australia er i samsvar med deres innsats for å forhindre
+                    feilinformasjon under de
+                    nylige valgene i India, Storbritannia og USA, sa Seeto.</p>
+                <p>Meta står overfor flere regulatoriske motvinder i Australia med regjeringen som planlegger å pålegge
+                    store teknologibedrifter en avgift for å kompensere for annonseinntekter de genererer fra deling av
+                    lokalt nyhetsinnhold.</p>
+                <p>Meta og andre sosiale medier-firmaer må også håndheve et forbud for brukere under 16 innen utgangen
+                    av
+                    dette året med selskapene som konsulterer myndighetene om hvordan de bør rullere restriksjonene.</p>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

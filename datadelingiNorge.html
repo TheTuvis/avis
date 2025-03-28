@@ -13,120 +13,235 @@
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">Vi slår alarm om datadelingen i Norge </h1>
-        <p class="innledning"> Norge blir ikke verdens mest digitaliserte land uten å gjøre det dramatisk enklere å dele
-            data</p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="Bilder/datadeling.png" alt="">
-        <p class="bildetekst">Yngve Milde og Elias Meling fra Datasamarbeidet i samferdselssektoren.</p>
-        <p class="kildeBilde">FOTO: Privat</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert mandag 17. mars</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Yngve Milde og Elias Meling, Datasamarbeidet i samferdselssektoren </p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
 
-        <div class="oppsummering">
-            <p class="punkterOverskrift">Kortversjonen</p>
-            <ul class="punkter">
-                <li>Politisk mål om at Norge skal bli verdens mest digitaliserte land innen 2030, men dagens juridiske
-                    praksis hindrer rask nok datadeling.</li>
-                <li>Datatilsynet setter terskelen for akseptabel risiko for høyt, noe som skaper en nullrisiko-praksis
-                    som
-                    forsinker datadeling.</li>
-                <li>Politikerne undervurderer de praktiske, tekniske og juridiske utfordringene knyttet til
-                    implementering
-                    av personvern i komplekse systemer.</li>
-                <li>Offentlige ledere er redde for å gjøre feil når det gjelder håndtering av personopplysninger, noe
-                    som
-                    fører til langsommere prosesser.</li>
-                <li>Et nasjonalt prioriteringsråd for datadeling bør etableres for å balansere dagens risikominimering
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">Vi slår alarm om datadelingen i Norge </h1>
+            <p class="innledning"> Norge blir ikke verdens mest digitaliserte land uten å gjøre det dramatisk enklere å
+                dele
+                data</p>
+
+        </div>
+
+        <div class="containerArtikkel">
+
+            <img class="førsteBilde" src="Bilder/datadeling.png" alt="">
+            <p class="bildetekst">Yngve Milde og Elias Meling fra Datasamarbeidet i samferdselssektoren.</p>
+            <p class="kildeBilde">FOTO: Privat</p>
+
+            <div class="publisertav">
+                <p>Publisert mandag 17. mars</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Yngve Milde og Elias Meling, Datasamarbeidet i samferdselssektoren </p>
+
+                </div>
+            </div>
+
+            <div class="oppsummering">
+                <p class="punkterOverskrift">Kortversjonen</p>
+                <ul class="punkter">
+                    <li>Politisk mål om at Norge skal bli verdens mest digitaliserte land innen 2030, men dagens
+                        juridiske
+                        praksis hindrer rask nok datadeling.</li>
+                    <li>Datatilsynet setter terskelen for akseptabel risiko for høyt, noe som skaper en
+                        nullrisiko-praksis
+                        som
+                        forsinker datadeling.</li>
+                    <li>Politikerne undervurderer de praktiske, tekniske og juridiske utfordringene knyttet til
+                        implementering
+                        av personvern i komplekse systemer.</li>
+                    <li>Offentlige ledere er redde for å gjøre feil når det gjelder håndtering av personopplysninger,
+                        noe
+                        som
+                        fører til langsommere prosesser.</li>
+                    <li>Et nasjonalt prioriteringsråd for datadeling bør etableres for å balansere dagens
+                        risikominimering
+                        og
+                        muliggjøre mer effektiv datadeling.</li>
+                </ul>
+                <button class="visMer" onclick="storBoks()">Vis mer</button>
+            </div>
+
+            <div class="hovedtekst">
+                <p>Visjonen er at Norge skal bli verdens mest digitaliserte land innen 2030, og vi i Datasamarbeidet i
+                    samferdselssektoren jobber for å legge til rette for nettopp det. Det kan ikke sies tydelig nok at
+                    de
+                    politiske vyene krever at man letter trykket på de juridiske vurderingene knyttet til datadeling.
+                </p>
+
+                <p>Fortsetter vi i dagens hastighet, hvor vi tar utgangspunkt i en nullrisiko-praksis, får vi kun
+                    avklart et
+                    lite knippe med datadelingssaker før 2030. vi får i hvert fall ikke tid til å bygge løsninger som
+                    utnytter de delte dataene på en måte som gjør at vi når visjonen.</p>
+
+                <p class="boldTekst">Det er nå én måned siden personverndagen 2025. Den avslørte særlig to grunner til å
+                    bekymre seg for hvordan det skal gå med strategien:</p>
+
+                <p>Det er en betydelig forskjell mellom hva Datatilsynet sier om datadeling og hvordan Datatilsynets
+                    praksis
+                    oppleves,</p>
+
+                <p> Det er et tydelig gap mellom de politiske vyene og virkeligheten på bakkeplan.</p>
+
+                <p class="underoverskrift">Datatilsynets forvaltning av risiko</p>
+
+                <p>Datatilsynets direktør Line Coll sa på personverndagen at man ikke skal sikte på null risiko, men en
+                    akseptabel risiko.
+                    Det er en kontrast mellom disse ordene og hvordan Datatilsynet oppfattes i praksis: som et organ som
+                    setter terskelen for akseptabel risiko så høyt at det for mange oppleves som nullrisiko. </p>
+                <p>I november 2024 blei søkt med undervassdrone, det blei tatt bilder som blei overlevert til politiet.
+                </p>
+                <p>Hovedoppgaven til Datatilsynet er «å bidra til at personvernlovgivningen etterleves». Det er en
+                    oppgave
+                    de utfører godt – kanskje litt for godt.</p>
+                <p>Virksomheter har ikke forvaltningsmessig kraft nok til å vekte samfunnsbehovet for datadeling høyere
+                    når
+                    de møter et slags personvernpoliti, som flere oppfatter Datatilsynet som. </p>
+                <p>Det resulterer i en prosess hvor jurister kontinuerlig må reforhandle tolkningen av regelverket.
+                    Taperen
+                    er skattebetalerne, som får for lite datadeling for pengene og dermed mindre gode offentlige
+                    tjenester
+                    enn de kunne – og burde – fått.</p>
+                <p>Datatilsynet bør senke terskelen for hva som oppfattes som akseptabel risiko, samtidig som et
+                    eventuelt
+                    nasjonalt prioriteringsråd blir en tydelig motvekt. Det blir en krevende oppgave for rådet. </p>
+
+
+                <p class="underoverskrift">Manglende forståelse</p>
+                <p>Stortingsrepresentant Nikolai Astrup (H) sa i paneldebatten at «Det må bare bygges inn fra start. Det
+                    er
+                    ikke vanskelig. Vi har mange debatter hvor vi problematiserer personvern». </p>
+                <p>Uttalelsen virker å gi uttrykk for en manglende forståelse for utfordringene offentlig sektor møter
+                    når
+                    de forsøker å sikre personvern i komplekse systemer, som for eksempel synliggjort av Riksrevisjonen.
+                </p>
+                <p>Det er rimelig å anta at flere sitter med slike tanker, så dette er ikke et forsøk på å kritisere
+                    bare
+                    Astrup. På én måte har han rett, teorien virker enkel, men det er faktisk en hel rekke utfordringer
+                    rent
+                    praktisk, teknisk, ressursmessig, organisatorisk, tidsmessig og ikke minst regulatorisk. De kan
+                    løses,
+                    men spesielt de juridiske/regulatoriske utfordringene må løses politisk.</p>
+
+                <p class="underoverskrift">Redde for å gjøre feil</p>
+                <p>«Det er sterke insentiver for å unngå feil i staten» skrev direktøren i Direktøratet for forvaltning
                     og
-                    muliggjøre mer effektiv datadeling.</li>
-            </ul>
-            <button class="visMer" onclick="storBoks()">Vis mer</button>
+                    økonomistyring (DFØ) nylig. Det er antakelig ikke noe område hvor ledere er reddere for å gjøre feil
+                    enn
+                    når det gjelder håndteringen av personopplysninger.</p>
+                <p>Liv Rossow fra Oslo Origo sa det godt:
+                    «Jeg ønsker meg at vi ikke behandler jussen som en annen type fag enn alle andre fag som trengs for
+                    å
+                    utvikle offentlig sektor. Jeg ønsker meg bedre ledere, og det juridiske hensynet må veies opp mot
+                    samfunnshensyn».</p>
+                <p>Politikerne må være de lederne Rossow ønsker seg. Datadeling i Norge er nesten uten unntak låst i
+                    langtekkelige juridiske vurderinger. Det tar flere måneder med arbeid og dytting for å få lov til å
+                    dele
+                    data som til og med allerede er delt med andre, fordi hver enkelt forespørsel behandles unikt.</p>
+
+                <p class="underoverskrift">Vi trenger en motvekt</p>
+                <p>Noen må tørre å ta den risikoen Datatilsynet peker på og være den ledelsen Rossow ønsker seg.</p>
+                <p>Vi må gjøre store grep for å få det til. Dette kan ikke løses innenfor dagens forvaltningspraksis,
+                    som
+                    legger opp til risikominimering i alle ledd.</p>
+                <p>Et første steg kan være å gi et fremtidig nasjonalt prioriteringsråd for deling av data et tydelig
+                    mandat
+                    til å fungere som motvekt til dagens nullrisikopraksis.</p>
+                <p>Uten dette og andre større grep så blir det heller ingen datadeling i stor skala, og Norge blir ikke
+                    verdens mest digitaliserte land i 2030. Ei heller i 2040. </p>
+            </div>
         </div>
+    </main>
 
-        <div class="hovedtekst">
-            <p>Visjonen er at Norge skal bli verdens mest digitaliserte land innen 2030, og vi i Datasamarbeidet i
-                samferdselssektoren jobber for å legge til rette for nettopp det. Det kan ikke sies tydelig nok at de
-                politiske vyene krever at man letter trykket på de juridiske vurderingene knyttet til datadeling.</p>
-
-            <p>Fortsetter vi i dagens hastighet, hvor vi tar utgangspunkt i en nullrisiko-praksis, får vi kun avklart et
-                lite knippe med datadelingssaker før 2030. vi får i hvert fall ikke tid til å bygge løsninger som
-                utnytter de delte dataene på en måte som gjør at vi når visjonen.</p>
-
-            <p class="boldTekst">Det er nå én måned siden personverndagen 2025. Den avslørte særlig to grunner til å
-                bekymre seg for hvordan det skal gå med strategien:</p>
-
-            <p>Det er en betydelig forskjell mellom hva Datatilsynet sier om datadeling og hvordan Datatilsynets praksis
-                oppleves,</p>
-
-            <p> Det er et tydelig gap mellom de politiske vyene og virkeligheten på bakkeplan.</p>
-
-            <p class="underoverskrift">Datatilsynets forvaltning av risiko</p>
-
-            <p>Datatilsynets direktør Line Coll sa på personverndagen at man ikke skal sikte på null risiko, men en
-                akseptabel risiko.
-                Det er en kontrast mellom disse ordene og hvordan Datatilsynet oppfattes i praksis: som et organ som
-                setter terskelen for akseptabel risiko så høyt at det for mange oppleves som nullrisiko. </p>
-            <p>I november 2024 blei søkt med undervassdrone, det blei tatt bilder som blei overlevert til politiet.</p>
-            <p>Hovedoppgaven til Datatilsynet er «å bidra til at personvernlovgivningen etterleves». Det er en oppgave
-                de utfører godt – kanskje litt for godt.</p>
-            <p>Virksomheter har ikke forvaltningsmessig kraft nok til å vekte samfunnsbehovet for datadeling høyere når
-                de møter et slags personvernpoliti, som flere oppfatter Datatilsynet som. </p>
-            <p>Det resulterer i en prosess hvor jurister kontinuerlig må reforhandle tolkningen av regelverket. Taperen
-                er skattebetalerne, som får for lite datadeling for pengene og dermed mindre gode offentlige tjenester
-                enn de kunne – og burde – fått.</p>
-            <p>Datatilsynet bør senke terskelen for hva som oppfattes som akseptabel risiko, samtidig som et eventuelt
-                nasjonalt prioriteringsråd blir en tydelig motvekt. Det blir en krevende oppgave for rådet. </p>
-
-
-            <p class="underoverskrift">Manglende forståelse</p>
-            <p>Stortingsrepresentant Nikolai Astrup (H) sa i paneldebatten at «Det må bare bygges inn fra start. Det er
-                ikke vanskelig. Vi har mange debatter hvor vi problematiserer personvern». </p>
-            <p>Uttalelsen virker å gi uttrykk for en manglende forståelse for utfordringene offentlig sektor møter når
-                de forsøker å sikre personvern i komplekse systemer, som for eksempel synliggjort av Riksrevisjonen.</p>
-            <p>Det er rimelig å anta at flere sitter med slike tanker, så dette er ikke et forsøk på å kritisere bare
-                Astrup. På én måte har han rett, teorien virker enkel, men det er faktisk en hel rekke utfordringer rent
-                praktisk, teknisk, ressursmessig, organisatorisk, tidsmessig og ikke minst regulatorisk. De kan løses,
-                men spesielt de juridiske/regulatoriske utfordringene må løses politisk.</p>
-
-            <p class="underoverskrift">Redde for å gjøre feil</p>
-            <p>«Det er sterke insentiver for å unngå feil i staten» skrev direktøren i Direktøratet for forvaltning og
-                økonomistyring (DFØ) nylig. Det er antakelig ikke noe område hvor ledere er reddere for å gjøre feil enn
-                når det gjelder håndteringen av personopplysninger.</p>
-            <p>Liv Rossow fra Oslo Origo sa det godt:
-                «Jeg ønsker meg at vi ikke behandler jussen som en annen type fag enn alle andre fag som trengs for å
-                utvikle offentlig sektor. Jeg ønsker meg bedre ledere, og det juridiske hensynet må veies opp mot
-                samfunnshensyn».</p>
-            <p>Politikerne må være de lederne Rossow ønsker seg. Datadeling i Norge er nesten uten unntak låst i
-                langtekkelige juridiske vurderinger. Det tar flere måneder med arbeid og dytting for å få lov til å dele
-                data som til og med allerede er delt med andre, fordi hver enkelt forespørsel behandles unikt.</p>
-
-            <p class="underoverskrift">Vi trenger en motvekt</p>
-            <p>Noen må tørre å ta den risikoen Datatilsynet peker på og være den ledelsen Rossow ønsker seg.</p>
-            <p>Vi må gjøre store grep for å få det til. Dette kan ikke løses innenfor dagens forvaltningspraksis, som
-                legger opp til risikominimering i alle ledd.</p>
-            <p>Et første steg kan være å gi et fremtidig nasjonalt prioriteringsråd for deling av data et tydelig mandat
-                til å fungere som motvekt til dagens nullrisikopraksis.</p>
-            <p>Uten dette og andre større grep så blir det heller ingen datadeling i stor skala, og Norge blir ikke
-                verdens mest digitaliserte land i 2030. Ei heller i 2040. </p>
-        </div>
-
-
-
-
-    </div>
 
     <script src="script.js"> </script>
 </body>
