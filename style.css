@@ -261,10 +261,15 @@ nav {
 }
 
 .logginntopp {
-    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.miniLogo{
+    width: 70px;
 }
 
 .logginnContainer button {
@@ -396,6 +401,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 25px;
+    margin: 10px;
     margin-top: 40px;
 }
 
@@ -658,6 +664,8 @@ img {
 
 main{
     margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 
@@ -688,3 +696,4 @@ main{
         justify-content: space-between;
     }
 }
+

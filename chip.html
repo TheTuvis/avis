@@ -14,43 +14,174 @@
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">Har laget kvantedatamaskin på vanlig chip </h1>
-        <p class="innledning">Microsoft har klart å lage en kvantedatabrikke med samme teknikk som en vanlig datamaskin. – Kan tilsvare oppfinnelsen av transistoren, sier professor. </p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="https://premium.vgc.no/v2/images/9d6eb6fe-18c4-4817-a46e-e95595ecba22?fit=crop&format=auto&h=1536&w=2048&s=9ccab2839407149200802332ed7d28737e29707b" alt=""> 
-        <p class="bildetekst">En tradisjonell kvantedatamaskin, som den til venstre fra Google, er enorm. Likevel inneholder den bare noen titalls såkalte kvantebits. Nå hevder Microsoft at de har funnet ut hvordan de skal kunne få plass til en million kvangtebits i en håndflate (til høyre). Foreløpig inneholder den bare én kvantebit.</p>
-        <p class="kildeBilde">FOTO: Microsoft (John Brecher) (t.v.) / Reuters (Stephen Nells)</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert 20. februar</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Per Kristian Bjørkeng </p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
 
-        <div class="hovedtekst">
-            <p>Kvantedatamaskiner har til nå vært svært eksotiske, kompliserte og skjøre apparater. Forskerne håper at de en gang skal kunne gjøre oppgaver som er umulige for tradisjonelle maskiner. Blant scenarioene som nevnes, er en realistisk simulering av kroppens celler. Slik skal man kunne regne seg frem til nye medikamenter – kanskje helt uten tidkrevende labtester.
-            </p>
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
 
-            <p>
-                Derfor har selskaper som Google og IBM satset enorme beløp på teknologien gjennom flere tiår. Men praktiske problemer med å gjøre maskinene små nok og pålitelige nok har vært store. I en artikkel som publiseres onsdag i anerkjente Nature, gjør forskere i Microsoft rede for det de tror er et gjennombrudd på feltet.
-            </p>
-           <p></p>
-           <p></p>
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">Har laget kvantedatamaskin på vanlig chip </h1>
+            <p class="innledning">Microsoft har klart å lage en kvantedatabrikke med samme teknikk som en vanlig
+                datamaskin. – Kan tilsvare oppfinnelsen av transistoren, sier professor. </p>
 
         </div>
 
+        <div class="containerArtikkel">
+
+            <img class="førsteBilde"
+                src="https://premium.vgc.no/v2/images/9d6eb6fe-18c4-4817-a46e-e95595ecba22?fit=crop&format=auto&h=1536&w=2048&s=9ccab2839407149200802332ed7d28737e29707b"
+                alt="">
+            <p class="bildetekst">En tradisjonell kvantedatamaskin, som den til venstre fra Google, er enorm. Likevel
+                inneholder den bare noen titalls såkalte kvantebits. Nå hevder Microsoft at de har funnet ut hvordan de
+                skal kunne få plass til en million kvangtebits i en håndflate (til høyre). Foreløpig inneholder den bare
+                én kvantebit.</p>
+            <p class="kildeBilde">FOTO: Microsoft (John Brecher) (t.v.) / Reuters (Stephen Nells)</p>
+
+            <div class="publisertav">
+                <p>Publisert 20. februar</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Per Kristian Bjørkeng </p>
+
+                </div>
+            </div>
+
+            <div class="hovedtekst">
+                <p>Kvantedatamaskiner har til nå vært svært eksotiske, kompliserte og skjøre apparater. Forskerne håper
+                    at de en gang skal kunne gjøre oppgaver som er umulige for tradisjonelle maskiner. Blant scenarioene
+                    som nevnes, er en realistisk simulering av kroppens celler. Slik skal man kunne regne seg frem til
+                    nye medikamenter – kanskje helt uten tidkrevende labtester.
+                </p>
+
+                <p>
+                    Derfor har selskaper som Google og IBM satset enorme beløp på teknologien gjennom flere tiår. Men
+                    praktiske problemer med å gjøre maskinene små nok og pålitelige nok har vært store. I en artikkel
+                    som publiseres onsdag i anerkjente Nature, gjør forskere i Microsoft rede for det de tror er et
+                    gjennombrudd på feltet.
+                </p>
+                <p></p>
+                <p></p>
+
+            </div>
 
 
-    </div>
 
+        </div>
+    </main>
+
+    <footer>
+        <section id="footerid">
+            <div class="footer">
+                <div class="main">
+                    <div class="footer-liste footer-linker">
+                        <h3>Kontakt oss</h3>
+                        <ul>
+                            <li>Mail: IT.Insider@gmail.com </li>
+                            <li>Telefon: 937 84 934</li>
+                            <li>Kontor: Nadderud VGS</li>
+                        </ul>
+                    </div>
+                    <div class="footer-liste footer-linker">
+                        <h3>Om oss. Vår utvikling</h3>
+                        <ul>
+                            <li>IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens
+                                verden.  Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din
+                                pålitelige kilde for teknologiens utvikling.
+
+                                Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

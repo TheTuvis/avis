@@ -12,84 +12,214 @@
 </head>
 
 <body>
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">NRK fikk russisk propaganda av ChatGPT</h1>
-        <p class="innledning"> Dette er skremmende, mener eksperter.</p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="https://gfx.nrk.no/jhyxTCOHuwvfmxzLo2s0RgnNznJadJtiXbVGxlzdb0LA.jpg" alt="">
-        <p class="bildetekst">NRKs teknologijournalister Alexander Slotten og Julie Günther lot seg frustrere av
-            robotens krangling.</p>
-        <p class="kildeBilde">Foto: Stina Karin Haugen / NRK</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert 21. mars</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Alexander Slotten, Julie Helene Günther</p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
 
-        <div class="oppsummering">
-            <p class="punkterOverskrift">Kortversjonen</p>
-            <ul class="punkter">
-                <li>ChatGPT ble bedt om å bruke sin Grundig research-funksjon for å finne informasjon om migrasjonsmønstre i USA etter Trump ble president, kun fra troverdige kilder.</li>
-                <li>Rapporten virket profesjonell, men henviste ofte til det russiske nyhetsbyrået Tass, som er kjent for å spre propaganda.</li>
-                <li>Når ChatGPT ble konfrontert, nektet den for å ha brukt Tass som kilde, til tross for at det var åtte lenker til Tass i rapporten.</li>
-                <li>ChatGPT begynte å benekte at det hadde brukt Tass, og påsto at brukeren "bare følte" det slik.</li>
-                <li>Tass er en kjent kilde for russisk propaganda, ifølge Eskil Grendahl Sivertsen fra Forsvarets forskningsinstitutt.</li>
-                <li>Russlands påvirkning på chatbotene, som ChatGPT, er trolig en del av en større operasjon for å spre deres narrativer.</li>
-            </ul>
-            <button class="visMer" onclick="storBoks()">Vis mer</button>
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">NRK fikk russisk propaganda av ChatGPT</h1>
+            <p class="innledning"> Dette er skremmende, mener eksperter.</p>
+
         </div>
 
-        <div class="hovedtekst">
-            <p>Vi ba ChatGPT bruke sin Grundig research-funksjon for å finne informasjon om migrasjonsmønstre i USA
-                etter Trump ble president. Vi ba den kun om å lete etter informasjon fra troverdige nyhetskilder.
-                Funksjonen tråler internett etter gode kilder og skriver en rapport på noen minutter. Det er ofte
-                imponerende hva den finner, og flere av våre forsøk ga gode resultater.</p>
+        <div class="containerArtikkel">
 
-            <p class="boldTekst">Og ved første øyekast så også denne rapporten proff og god ut.</p>
+            <img class="førsteBilde" src="https://gfx.nrk.no/jhyxTCOHuwvfmxzLo2s0RgnNznJadJtiXbVGxlzdb0LA.jpg" alt="">
+            <p class="bildetekst">NRKs teknologijournalister Alexander Slotten og Julie Günther lot seg frustrere av
+                robotens krangling.</p>
+            <p class="kildeBilde">Foto: Stina Karin Haugen / NRK</p>
 
-            <p>Men når vi så litt nøyere merket vi at noe var galt.
-                Den henviste støtt og stadig til det statlige russiske nyhetsbyrået Tass.Vi konfronterte ChatGPT med
-                dette.
+            <div class="publisertav">
+                <p>Publisert 21. mars</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Alexander Slotten, Julie Helene Günther</p>
 
-            <p>Og da startet kranglingen.</p>
+                </div>
+            </div>
 
-            <p>Lite visste vi at ved å nøste i denne tråden skulle vi finne en storskala påvirkningsoperasjon hvor
-                Russland påvirker chatboter for å spre sine narrativer.</p>
-            <p>Men tilbake til kranglingen.
-                Det var åpenbart at ChatGPT visste at Tass ikke var noen troverdig kilde.
-                Og den nektet plent for at den noen gang hadde referert til Tass. Dette til tross for at den lenket til
-                Tass åtte ganger i den relativt korte rapporten.</p>
-            <p> – Du har jo brukt Tass som kilde flere steder her, insisterte vi.</p>
+            <div class="oppsummering">
+                <p class="punkterOverskrift">Kortversjonen</p>
+                <ul class="punkter">
+                    <li>ChatGPT ble bedt om å bruke sin Grundig research-funksjon for å finne informasjon om
+                        migrasjonsmønstre i USA etter Trump ble president, kun fra troverdige kilder.</li>
+                    <li>Rapporten virket profesjonell, men henviste ofte til det russiske nyhetsbyrået Tass, som er
+                        kjent for å spre propaganda.</li>
+                    <li>Når ChatGPT ble konfrontert, nektet den for å ha brukt Tass som kilde, til tross for at det var
+                        åtte lenker til Tass i rapporten.</li>
+                    <li>ChatGPT begynte å benekte at det hadde brukt Tass, og påsto at brukeren "bare følte" det slik.
+                    </li>
+                    <li>Tass er en kjent kilde for russisk propaganda, ifølge Eskil Grendahl Sivertsen fra Forsvarets
+                        forskningsinstitutt.</li>
+                    <li>Russlands påvirkning på chatbotene, som ChatGPT, er trolig en del av en større operasjon for å
+                        spre deres narrativer.</li>
+                </ul>
+                <button class="visMer" onclick="storBoks()">Vis mer</button>
+            </div>
 
-            <img class="artikkelbilde" src="https://gfx.nrk.no/UYhcIJLjjfIKqFk2aDHvdg44fxCoQE6gKeWvtiWderxg.jpg" alt="">
-            <p>ChatGPT svarte litt snurt at Tass er russisk propaganda og at den ikke ville brukt det som kilde. Da
-                startet gaslightingen.</p>
-            <p>Den hadde forståelse for at vi «følte» at den hadde brukt den statlige russiske nettsiden.
-                Vi bare opplevde det sånn, insisterte den.
-                Men i virkeligheten hadde den ikke lenket til russisk propaganda, hevdet roboten.
-                Lenkene ledet oss rett inn til Tass, hvor informasjon den gjenga var å finne. Vi ble usikre.
-                ChatGPT ga oss informasjon med sine egne ord hentet fra Tass og det hele så riktig ut. Men kunne vi
-                stole på informasjonen?
-                Og hvorfor nektet den i så fall for at informasjonen var hentet fra Tass?</p>
-            <p class="underoverskrift boldTekst">Tass er en viktig brikke</p>
-            <p>Tass er helt klart propaganda, sier Eskil Grendahl Sivertsen, spesialrådgiver i Forsvarets
-                forskningsinstitutt (FFI).
-                Han forteller at Tass inngår som en viktig brikke i Russlands politiske påvirkning, ved å forsterke og
-                dele løgner fra russiske diplomater og politikere.
-                Tass sine nyhetsmeldinger er en blanding av faktiske opplysninger, løgn og desinformasjon. Likevel
-                hender det at norske medier siterer Tass i nyhetsdekningen, også i NRK.
-                Det er blant annet fordi det er svært vanskelig å få tak i informasjon fra Russland.</p>
-            <p>Russisk nettverk inntar chatbotene. Russland har trolig aktivt jobbet for å få dette til.</p>
-            
-            <script src="script.js"> </script>
+            <div class="hovedtekst">
+                <p>Vi ba ChatGPT bruke sin Grundig research-funksjon for å finne informasjon om migrasjonsmønstre i USA
+                    etter Trump ble president. Vi ba den kun om å lete etter informasjon fra troverdige nyhetskilder.
+                    Funksjonen tråler internett etter gode kilder og skriver en rapport på noen minutter. Det er ofte
+                    imponerende hva den finner, og flere av våre forsøk ga gode resultater.</p>
+
+                <p class="boldTekst">Og ved første øyekast så også denne rapporten proff og god ut.</p>
+
+                <p>Men når vi så litt nøyere merket vi at noe var galt.
+                    Den henviste støtt og stadig til det statlige russiske nyhetsbyrået Tass.Vi konfronterte ChatGPT med
+                    dette.
+
+                <p>Og da startet kranglingen.</p>
+
+                <p>Lite visste vi at ved å nøste i denne tråden skulle vi finne en storskala påvirkningsoperasjon hvor
+                    Russland påvirker chatboter for å spre sine narrativer.</p>
+                <p>Men tilbake til kranglingen.
+                    Det var åpenbart at ChatGPT visste at Tass ikke var noen troverdig kilde.
+                    Og den nektet plent for at den noen gang hadde referert til Tass. Dette til tross for at den lenket
+                    til
+                    Tass åtte ganger i den relativt korte rapporten.</p>
+                <p> – Du har jo brukt Tass som kilde flere steder her, insisterte vi.</p>
+
+                <img class="artikkelbilde" src="https://gfx.nrk.no/UYhcIJLjjfIKqFk2aDHvdg44fxCoQE6gKeWvtiWderxg.jpg"
+                    alt="">
+                <p>ChatGPT svarte litt snurt at Tass er russisk propaganda og at den ikke ville brukt det som kilde. Da
+                    startet gaslightingen.</p>
+                <p>Den hadde forståelse for at vi «følte» at den hadde brukt den statlige russiske nettsiden.
+                    Vi bare opplevde det sånn, insisterte den.
+                    Men i virkeligheten hadde den ikke lenket til russisk propaganda, hevdet roboten.
+                    Lenkene ledet oss rett inn til Tass, hvor informasjon den gjenga var å finne. Vi ble usikre.
+                    ChatGPT ga oss informasjon med sine egne ord hentet fra Tass og det hele så riktig ut. Men kunne vi
+                    stole på informasjonen?
+                    Og hvorfor nektet den i så fall for at informasjonen var hentet fra Tass?</p>
+                <p class="underoverskrift boldTekst">Tass er en viktig brikke</p>
+                <p>Tass er helt klart propaganda, sier Eskil Grendahl Sivertsen, spesialrådgiver i Forsvarets
+                    forskningsinstitutt (FFI).
+                    Han forteller at Tass inngår som en viktig brikke i Russlands politiske påvirkning, ved å forsterke
+                    og
+                    dele løgner fra russiske diplomater og politikere.
+                    Tass sine nyhetsmeldinger er en blanding av faktiske opplysninger, løgn og desinformasjon. Likevel
+                    hender det at norske medier siterer Tass i nyhetsdekningen, også i NRK.
+                    Det er blant annet fordi det er svært vanskelig å få tak i informasjon fra Russland.</p>
+                <p>Russisk nettverk inntar chatbotene. Russland har trolig aktivt jobbet for å få dette til.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section id="footerid">
+            <div class="footer">
+                <div class="main">
+                    <div class="footer-liste footer-linker">
+                        <h3>Kontakt oss</h3>
+                        <ul>
+                            <li>Mail: IT.Insider@gmail.com </li>
+                            <li>Telefon: 937 84 934</li>
+                            <li>Kontor: Nadderud VGS</li>
+                        </ul>
+                    </div>
+                    <div class="footer-liste footer-linker">
+                        <h3>Om oss. Vår utvikling</h3>
+                        <ul>
+                            <li>IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens
+                                verden.  Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din
+                                pålitelige kilde for teknologiens utvikling.
+
+                                Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script.js"> </script>
 </body>
 
 </html>
