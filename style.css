@@ -96,7 +96,7 @@ nav {
 
 .navbar a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--hvit);
 
 }
@@ -394,7 +394,6 @@ nav {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 400px 400px 400px 400px 300px;
     gap: 25px;
     margin-top: 40px;
 }
@@ -665,15 +664,27 @@ img {
 
 /*Media*/
 
-@media(max-width: 1000px) {
+@media(max-width: 1030px) {
 
-    .logginn,
-    .abonner {
+   .navdel3 .logginn,
+    .navdel3 .abonner {
         display: none;
     }
 
     .navbar a {
-        font
+        font-size: 20px;
+
     }
 
+}
+
+
+@media(max-width: 900px){
+    .navdel2 {
+        display: none;
+        width: 0px;
+    }
+    nav {
+        justify-content: space-between;
+    }
 }
