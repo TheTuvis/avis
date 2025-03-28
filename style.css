@@ -40,6 +40,12 @@ nav {
     align-items: center;
 }
 
+
+.navdel1 img{
+    height: 100px;
+    width: 125px;
+}
+
 .navbar {
 
     position: fixed;
@@ -594,4 +600,14 @@ ul li {
     bottom: 20px;
     left: 20px;
 
+}
+
+
+
+.søk-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
