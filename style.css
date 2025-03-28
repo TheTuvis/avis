@@ -8,6 +8,7 @@
     --articlebakgrunnsfarge: rgb(241, 235, 235);
     --articlebakgrunnmørk: rgb(50, 49, 54);
     --hvitblå: rgb(219, 219, 247);
+    --KARPEprimary: #ff6f61;
 }
 
 
@@ -443,18 +444,18 @@ a {
 /* søke sak*/
 .søk-content {
     position: absolute;
-    top: 58px;
-    left: 0;
-    background-color: aquamarine;
+    top: 100%; 
+    left: 50%;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 250px;
     display: none;
     z-index: 1000;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-
 }
+
 
 
 .søkeord {
@@ -483,13 +484,12 @@ a {
 
 
 /*fotter*/
-:root {
-    --primary: #222;
-    --KARPEprimary: #ff6f61;
-}
+
+
+
 
 #footerid {
-    background-color: var(--primary);
+    background-color: var(--blå);
 }
 
 .main {
@@ -507,7 +507,7 @@ a {
 
 .footer-liste h3 {
     font-size: 1.2rem;
-    color: grey;
+    color: white;
     position: relative;
     margin-bottom: 25px;
     font-family: Arial, sans-serif;
@@ -524,14 +524,14 @@ a {
 }
 
 .footer-liste ul li {
-    color: grey;
+    color: white;
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     margin-top: 10px;
 }
 
 .footer-linker ul li:hover {
-    color: var(--KARPEprimary);
+    color: var(--hvitblå);
     transform: scale(1.05) translateY(2px);
     transition: .4s;
 }
@@ -542,7 +542,7 @@ a {
 }
 
 .footer-linker ul li a:hover {
-    color: var(--KARPEprimary);
+    color: var(--hvitblå);
 }
 
 /* avis layout */
@@ -650,15 +650,11 @@ img {
 
 
 
-.søk-content {
-    display: none;
-    position: absolute;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px;
+
+
+main{
+    margin-bottom: 0px;
 }
-
-
 
 
 
