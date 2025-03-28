@@ -66,7 +66,7 @@ function Mørkmodus() {
 }
 
 
-function søk() {
+function sok() {
     const søkeord = document.getElementById("søkeord").value.toLowerCase();
     const søkContent = document.getElementById("søkContent");
     søkContent.innerHTML = "";
