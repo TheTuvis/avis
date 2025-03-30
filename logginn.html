@@ -17,8 +17,8 @@
     <nav class="navbar">
 
         <div class="navdel1">
-            <a href="index.html"> 
-                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+            <a href="index.html">
+                <img class="logo" src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
                     alt="">
             </a>
             <a href="index.html">Nyheter
@@ -34,7 +34,7 @@
         <div class="navdel2">
             <div class="input-container">
                 <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
-                <button id="søkknapp" onclick="søk()">Søk</button>
+                <button id="søkknapp" onclick="sok()">Søk</button>
                 <div class="søk-content" id="søkContent"></div>
             </div>
 
@@ -61,15 +61,43 @@
 
         <div class="dropdown-content2">
             <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
             </div>
-            <div>
-                <a href="#">Link 2</a>
-            </div>
-            <div>
-                <a href="#">Link 3</a>
-            </div>
-            <a href="#">Link 1</a>
         </div>
     </nav>
 
