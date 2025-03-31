@@ -7,7 +7,7 @@
     --lysblå: lightblue;
     --articlebakgrunnsfarge: rgb(241, 235, 235);
     --articlebakgrunnmørk: rgb(50, 49, 54);
-    --hvitblå: rgb(219, 219, 247);
+    --hvitblå: rgb(196, 215, 234);
     --KARPEprimary: #ff6f61;
 }
 
@@ -63,7 +63,6 @@ img {
 
 
 
-
 }
 
 
@@ -80,7 +79,8 @@ nav {
 
 .navdel1 img {
     height: 100px;
-    width: 125px;
+    width: 100px;
+    padding-top: 7px;
 }
 
 .navbar {
@@ -97,7 +97,7 @@ nav {
 
 .navbar a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--hvit);
 
 }
@@ -238,7 +238,7 @@ nav {
 .logginnContainer {
     background-color: var(--hvit);
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 20vh;
     height: 400px;
     width: 400px;
     border: 13px solid var(--blå);
@@ -248,6 +248,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 20vh;
 }
 
 .logginnboks {
@@ -261,10 +262,15 @@ nav {
 }
 
 .logginntopp {
-    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+}
+
+.miniLogo{
+    width: 70px;
 }
 
 .logginnContainer button {
@@ -395,7 +401,9 @@ nav {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, fit-content);
     gap: 25px;
+    margin: 10px;
     margin-top: 40px;
 }
 
@@ -423,7 +431,7 @@ article.xlarge {
 }
 
 .artikkelbilde {
-    height: 70%;
+    height: 240px;
     width: 100%;
     padding: 10px;
 }
@@ -445,7 +453,7 @@ a {
 .søk-content {
     position: absolute;
     top: 100%; 
-    left: 50%;
+    left: 54%;
     background: white;
     border: 1px solid #ddd;
     padding: 10px;
@@ -454,15 +462,19 @@ a {
     z-index: 1000;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
-
+.søk-content a {
+    color: black;
+}
 
 .søkeord {
     display: flex;
     flex-direction: column;
     background-color: aquamarine;
     font-size: 25px;
+    color: black;
 
 }
 
@@ -548,6 +560,7 @@ a {
 /* avis layout */
 .containerArtikkel {
     max-width: 800px;
+    padding: 13px;
     margin: auto;
 }
 
@@ -654,20 +667,48 @@ img {
 
 main{
     margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 
 /*Media*/
 
-@media(max-width: 1000px) {
+@media(max-width: 1030px) {
 
-    .logginn,
-    .abonner {
+   .navdel3 .logginn,
+    .navdel3 .abonner {
         display: none;
     }
 
     .navbar a {
-        font
+        font-size: 20px;
+
     }
 
 }
+
+
+@media(max-width: 900px){
+    .navdel2 {
+        display: none;
+        width: 0px;
+    }
+    nav {
+        justify-content: space-between;
+    }
+
+    .artikkeltittel {
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 690px){
+    .artikkeltittel {
+        font-size: 23px;
+    }
+    .artikkelbilde  {
+        height: 190px;
+    }
+}
+

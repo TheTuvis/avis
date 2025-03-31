@@ -14,65 +14,206 @@
 
 <body>
 
-    <div class="containerOverskrift">
-        <h1 class="overskriftArtikkel">AI oppdager lungekreft </h1>
-        <p class="innledning">Et sykehus i North Yorkshire har introdusert AI-teknologi som kan fremskynde oppdagelsen av lungekreft og andre alvorlige sykdommer. </p>
+    <nav class="navbar">
 
-    </div>
+        <div class="navdel1">
+            <a href="index.html">
+                <img src="bilder/DALL·E 2025-03-25 13.34.43 - A modern and minimalistic tech logo without text, designed for a technology news publication. The design should feature a futuristic and sleek emblem .png"
+                    alt="">
+            </a>
+            <a href="index.html">Nyheter
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="tipsoss.html">Tips oss
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
 
-    <div class="containerArtikkel">
 
-        <img class="førsteBilde" src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/3852/live/7a5d9850-e3d8-11ef-b564-41750c4ba94b.jpg.webp" alt="">
-        <p class="bildetekst">Politimmeister i Aust politidistrikt, Brita Cecilie Lilaas-Ska</p>
-        <p class="kildeBilde">FOTO: NRK</p>
+        </div>
 
-        <div class="publisertav">
-            <p>Publisert mandag 17. mars</p>
-            <div class="skrevetav">
-                <i class="fa-solid fa-circle-user"></i>
-                <p> Geir Bjarte Hjetland </p>
+        <div class="navdel2">
+            <div class="input-container">
+                <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                <button id="søkknapp" onclick="sok()">Søk</button>
+                <div class="søk-content" id="søkContent"></div>
+            </div>
 
+        </div>
+
+        <div class="navdel3">
+            <a href="abonner.html">
+                <div class="abonner">
+                    Abonner
+                </div>
+            </a>
+            <a href="logginn.html">
+                <div class="logginn">
+                    Logg inn
+                </div>
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
 
-        <div class="oppsummering">
-            <p class="punkterOverskrift">Kortversjonen</p>
-            <ul class="punkter">
-                <li>Harrogate and District NHS Foundation Trust har introdusert AI-teknologi som kan forbedre tidlig påvisning av lungekreft og andre sykdommer..</li>
-                <li>AI-programvaren kan analysere røntgenbilder på under 30 sekunder, og prioriterer unormale tilfeller.</li>
-                <li>Programvaren fungerer som et ekstra verktøy for klinikere og bidrar til å oppdage alvorlige sykdommer raskere.</li>
-                <li>Dr. Daniel Fascia sier at teknologien vil redusere ventetider og historiske etterslep fra COVID-19-pandemien.</li>
-                <li>AI har vært brukt til å oppdage traumerelaterte skader siden juli 2023 og er en del av et initiativ med seks radiologiske avdelinger i Yorkshire.</li>
-                <li>Teknologien får støtte fra NHS Englands AI Diagnostics Fund (AIDF) for tidlig lungekreftoppdagelse.</li>
-                <li>Peter Kyle MP mener utrullingen kan redde liv og fremme medisinsk innovasjon.</li>
-            </ul>
-            <button class="visMer" onclick="storBoks()">Vis mer</button>
+        <div class="dropdown-content2">
+            <div>
+                <div class="drop1">
+                    <i class="fa-regular fa-circle-user" style="color: white;"></i>
+                    <p class="droptekst">Du er ikke logget inn</p>
+
+                </div>
+                <div class="drop11">
+                    <a href="abonner.html">
+                        <div class="abonner">
+                            Bli medlem
+                        </div>
+                    </a>
+                    <a href="logginn.html">
+                        <div class="logginn">
+                            Logg inn
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="droplinje">
+                <div class="input-container">
+                    <input type="text" id="søkeord" placeholder="Hva leter du etter?" />
+                    <button id="søkknapp" onclick="søk()">Søk</button>
+                    <div class="søk-content" id="søkContent"></div>
+                </div>
+            </div>
+            <div class="drop3 droplinje">
+                <p>Mørkmodus</p>
+                <button class="knappikon">
+                    <i class="fa-solid fa-toggle-off ikonmørkmodus" style="color: white;"></i>
+                </button>
+            </div>
+            <div class="droplinje">
+                <a href="#">Nyheter
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="containerOverskrift">
+            <h1 class="overskriftArtikkel">AI oppdager lungekreft </h1>
+            <p class="innledning">Et sykehus i North Yorkshire har introdusert AI-teknologi som kan fremskynde
+                oppdagelsen av lungekreft og andre alvorlige sykdommer. </p>
+
         </div>
 
-        <div class="hovedtekst">
-            <p>Harrogate and District NHS Foundation Trust sa at programvaren ville "betydelig forbedre" effektiviteten og nøyaktigheten av analysen av røntgenbilder av brystet. 
-                Alle røntgenbilder blir nå lest av AI på under 30 sekunder etter at de er tatt på sykehuset, med unormale tilfeller prioritert. Programvaren vil fungere som et ekstra par øyne for klinikere og bidra til å identifisere alvorlige tilstander tidligere, sa en talsperson for trusten.
-            
-            <p>Programvaren kan oppdage opptil 124 potensielle funn på røntgenbilder av brystet på under ett minutt, og strømlinjeformer rapporteringsprosessen.
-            Dr. Daniel Fascia, konsulentradiolog ved HDFT, sa: 
-            
-            <p> – Denne teknologien vil kraftig redusere tiden det tar for klinikere på tvers av våre trusts å nøyaktig rapportere og diagnostisere hvert røntgenbilde, og hjelpe oss med å redusere historiske etterslep i organisasjonene våre, som stammer tilbake til COVID-19-pandemien."</p>
+        <div class="containerArtikkel">
 
-            <p>Harrogate-trusten har brukt AI for å oppdage traumerelaterte skader på røntgenbilder, som brudd og forstuvninger, siden juli 2023. 
-                Det er den siste av seks radiologiske avdelinger i Yorkshire som har introdusert den nyeste programvaren.</p>
-            
-            
+            <img class="førsteBilde"
+                src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/3852/live/7a5d9850-e3d8-11ef-b564-41750c4ba94b.jpg.webp"
+                alt="">
+            <p class="bildetekst">Politimmeister i Aust politidistrikt, Brita Cecilie Lilaas-Ska</p>
+            <p class="kildeBilde">FOTO: NRK</p>
+
+            <div class="publisertav">
+                <p>Publisert mandag 17. mars</p>
+                <div class="skrevetav">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p> Geir Bjarte Hjetland </p>
+
+                </div>
+            </div>
+
+            <div class="oppsummering">
+                <p class="punkterOverskrift">Kortversjonen</p>
+                <ul class="punkter">
+                    <li>Harrogate and District NHS Foundation Trust har introdusert AI-teknologi som kan forbedre tidlig
+                        påvisning av lungekreft og andre sykdommer..</li>
+                    <li>AI-programvaren kan analysere røntgenbilder på under 30 sekunder, og prioriterer unormale
+                        tilfeller.</li>
+                    <li>Programvaren fungerer som et ekstra verktøy for klinikere og bidrar til å oppdage alvorlige
+                        sykdommer raskere.</li>
+                    <li>Dr. Daniel Fascia sier at teknologien vil redusere ventetider og historiske etterslep fra
+                        COVID-19-pandemien.</li>
+                    <li>AI har vært brukt til å oppdage traumerelaterte skader siden juli 2023 og er en del av et
+                        initiativ med seks radiologiske avdelinger i Yorkshire.</li>
+                    <li>Teknologien får støtte fra NHS Englands AI Diagnostics Fund (AIDF) for tidlig
+                        lungekreftoppdagelse.</li>
+                    <li>Peter Kyle MP mener utrullingen kan redde liv og fremme medisinsk innovasjon.</li>
+                </ul>
+                <button class="visMer" onclick="storBoks()">Vis mer</button>
+            </div>
+
+            <div class="hovedtekst">
+                <p>Harrogate and District NHS Foundation Trust sa at programvaren ville "betydelig forbedre"
+                    effektiviteten og nøyaktigheten av analysen av røntgenbilder av brystet.
+                    Alle røntgenbilder blir nå lest av AI på under 30 sekunder etter at de er tatt på sykehuset, med
+                    unormale tilfeller prioritert. Programvaren vil fungere som et ekstra par øyne for klinikere og
+                    bidra til å identifisere alvorlige tilstander tidligere, sa en talsperson for trusten.
+
+                <p>Programvaren kan oppdage opptil 124 potensielle funn på røntgenbilder av brystet på under ett minutt,
+                    og strømlinjeformer rapporteringsprosessen.
+                    Dr. Daniel Fascia, konsulentradiolog ved HDFT, sa:
+
+                <p> – Denne teknologien vil kraftig redusere tiden det tar for klinikere på tvers av våre trusts å
+                    nøyaktig rapportere og diagnostisere hvert røntgenbilde, og hjelpe oss med å redusere historiske
+                    etterslep i organisasjonene våre, som stammer tilbake til COVID-19-pandemien."</p>
+
+                <p>Harrogate-trusten har brukt AI for å oppdage traumerelaterte skader på røntgenbilder, som brudd og
+                    forstuvninger, siden juli 2023.
+                    Det er den siste av seks radiologiske avdelinger i Yorkshire som har introdusert den nyeste
+                    programvaren.</p>
+
+
                 <p class="underoverskrift boldTekst">"Inovasjon"</p>
-            <p>Finansiering for teknologien er sikret gjennom NHS Englands AI Diagnostics Fund (AIDF).
-                Dette vil gi £21 millioner til 11 bildediagnosenettverk, som dekker 64 NHS-trusts over hele England, for å støtte dem med tidlig påvisning av lungekreft.
-                Storbritannias statsråd for vitenskap, innovasjon og teknologi, Peter Kyle MP, sa at utrullingen av verktøyet kan "redde liv over hele landet".</p>
-            <p> – Som en som har mistet både mamma og pappa til kreft, vet jeg hvor viktig det er å akselerere medisinsk innovasjon, gjennom ekte samarbeid som dette, for å hindre at denne sykdommen bryter opp familier," la han til.</p>
+                <p>Finansiering for teknologien er sikret gjennom NHS Englands AI Diagnostics Fund (AIDF).
+                    Dette vil gi £21 millioner til 11 bildediagnosenettverk, som dekker 64 NHS-trusts over hele England,
+                    for å støtte dem med tidlig påvisning av lungekreft.
+                    Storbritannias statsråd for vitenskap, innovasjon og teknologi, Peter Kyle MP, sa at utrullingen av
+                    verktøyet kan "redde liv over hele landet".</p>
+                <p> – Som en som har mistet både mamma og pappa til kreft, vet jeg hvor viktig det er å akselerere
+                    medisinsk innovasjon, gjennom ekte samarbeid som dette, for å hindre at denne sykdommen bryter opp
+                    familier," la han til.</p>
+
+            </div>
+
+
 
         </div>
+    </main>
+
+    <footer>
+        <section id="footerid">
+            <div class="footer">
+                <div class="main">
+                    <div class="footer-liste footer-linker">
+                        <h3>Kontakt oss</h3>
+                        <ul>
+                            <li>Mail: IT.Insider@gmail.com </li>
+                            <li>Telefon: 937 84 934</li>
+                            <li>Kontor: Nadderud VGS</li>
+                        </ul>
+                    </div>
+                    <div class="footer-liste footer-linker">
+                        <h3>Om oss. Vår utvikling</h3>
+                        <ul>
+                            <li>IT Insider ble grunnlagt i 2025 med et mål om å gi leserne dyp innsikt i teknologiens
+                                verden.  Med en lidenskap for uavhengig journalistikk og grundige analyser, er vi din
+                                pålitelige kilde for teknologiens utvikling.
+
+                                Bli med oss på reisen, og få innsikt fra IT Insider – din guide til fremtiden.</li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
-
-    </div>
     <script src="script.js"> </script>
 </body>
 
