@@ -616,7 +616,20 @@ img {
     margin-top: 50px;
 }
 
+.kilde a{
+    font-style: italic;
+    font-size: 23px;
+    color: black;
+    text-decoration: underline;
+}
+.kilde {
+    margin-top: 50px;
+    font-size: 23px;
+}
 
+.kilde a:hover {
+    color: var(--mørkblå);
+}
 /*Boks med kort oppsummering*/
 
 .oppsummering {
