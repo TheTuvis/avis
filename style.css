@@ -14,7 +14,7 @@
 
 
 
-
+/*Minimal css reset*/
 
 * {
     margin: 0;
@@ -57,12 +57,6 @@ img {
 .logo {
     height: 100px;
     width: 100px;
-
-
-
-
-
-
 }
 
 
@@ -261,7 +255,7 @@ nav {
     height: 180px;
 }
 
-#logginnbtn:hover{
+#logginnbtn:hover {
     cursor: pointer;
     padding: 17px;
 }
@@ -274,7 +268,7 @@ nav {
     height: 20%;
 }
 
-.miniLogo{
+.miniLogo {
     width: 70px;
 }
 
@@ -416,7 +410,6 @@ nav {
 article {
     background-color: var(--articlebakgrunnsfarge);
     grid-column: span 3;
-    /*border: 2px solid black;*/
 }
 
 .small {
@@ -457,7 +450,7 @@ a {
 /* søke sak*/
 .søk-content {
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 54%;
     background: white;
     border: 1px solid #ddd;
@@ -621,12 +614,13 @@ img {
     margin-top: 50px;
 }
 
-.kilde a{
+.kilde a {
     font-style: italic;
     font-size: 23px;
     color: black;
     text-decoration: underline;
 }
+
 .kilde {
     margin-top: 50px;
     font-size: 23px;
@@ -635,6 +629,7 @@ img {
 .kilde a:hover {
     color: var(--mørkblå);
 }
+
 /*Boks med kort oppsummering*/
 
 .oppsummering {
@@ -683,7 +678,7 @@ img {
 
 
 
-main{
+main {
     margin-bottom: 20px;
     margin-top: 100px;
     margin-bottom: 150px;
@@ -694,7 +689,7 @@ main{
 
 @media(max-width: 1030px) {
 
-   .navdel3 .logginn,
+    .navdel3 .logginn,
     .navdel3 .abonner {
         display: none;
     }
@@ -707,11 +702,12 @@ main{
 }
 
 
-@media(max-width: 900px){
+@media(max-width: 900px) {
     .navdel2 {
         display: none;
         width: 0px;
     }
+
     nav {
         justify-content: space-between;
     }
@@ -721,12 +717,12 @@ main{
     }
 }
 
-@media(max-width: 690px){
+@media(max-width: 690px) {
     .artikkeltittel {
         font-size: 23px;
     }
-    .artikkelbilde  {
+
+    .artikkelbilde {
         height: 190px;
     }
 }
-
