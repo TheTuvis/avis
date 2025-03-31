@@ -261,6 +261,11 @@ nav {
     height: 180px;
 }
 
+#logginnbtn:hover{
+    cursor: pointer;
+    padding: 17px;
+}
+
 .logginntopp {
     display: flex;
     flex-direction: row;
